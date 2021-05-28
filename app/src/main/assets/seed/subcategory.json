@@ -1,0 +1,38 @@
+ {
+    "IsSuccess": true,
+    "ErrorMessages": [],
+    "Data": [
+      {
+        "Id": 1,
+        "Description": "ภูมิแพ้",
+        "LogoImageWithoutCaption": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+        "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+        "IsShow": true,
+        "Active": true
+      },
+      {
+        "Id": 2,
+        "Description": "ภูมิแพ้",
+        "LogoImageWithoutCaption": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+        "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+        "IsShow": true,
+        "Active": true
+      },
+      {
+        "Id": 3,
+        "Description": "ภูมิแพ้",
+        "LogoImageWithoutCaption": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+        "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+        "IsShow": true,
+        "Active": true
+      },
+      {
+        "Id": 4,
+        "Description": "ภูมิแพ้",
+        "LogoImageWithoutCaption": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+        "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+        "IsShow": true,
+        "Active": true
+      }
+    ]
+ }

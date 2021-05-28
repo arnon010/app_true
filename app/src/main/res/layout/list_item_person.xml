@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Button.Tag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="80dp"
+    android:padding="@dimen/padding_mini"
+    android:gravity="center"
+    android:background="@drawable/selector_button_person"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextStyle.Title"
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Test Test"
+        android:textColor="@color/color_white_reverse"/>
+
+</LinearLayout>

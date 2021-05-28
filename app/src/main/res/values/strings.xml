@@ -1,0 +1,1053 @@
+<resources>
+    <string name="app_name">True Health</string>
+    <string name="label_view_https_chiiwii" translatable="false">Chiiwii</string>
+    <string name="label_view_chiiwii_home" translatable="false">Chiiwii</string>
+
+    <string name="powered_by_chiiwii">Powered by Chiiwii</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_LoginOTP">OTP Login</string>
+    <string name="title_activity_LoginPIN">PIN Login</string>
+    <string name="title_activity_detail_doctor">DetailDoctorActivity</string>
+
+    <!-- fix issue android studio -->
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+
+    <string name="message_update_version">Found True Health new version\n Please update True Health on Play Store</string>
+    <string name="button_update_app">Update</string>
+    <string name="button_update_cancel">Not now</string>
+
+    <!-- Error Message -->
+    <string name="double_back_pressed">Press again for exit</string>
+    <string name="error_password">This password is too short</string>
+    <string name="error_password_confirmed">Passwords do not match</string>
+    <string name="error_invalid_username">username is too short</string>
+    <string name="error_invalid_email">Please use the correct email format</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_otp">6–digit OTP number</string>
+    <string name="error_invalid_mobile">10–digit phone number</string>
+    <string name="error_invalid_discount">Coupon code</string>
+    <string name="error_invalid_payment_code">Transaction code</string>
+    <string name="error_invalid_telephone">Please use a valid phone number</string>
+    <string name="error_invalid_payment">Please payment check again</string>
+
+    <!--  Splash Screen  -->
+    <string name="splash_title">Telehealth</string>
+
+    <!--    //..credit card-->
+    <string name="error_invalid_card_number">16–digit Card number</string>
+    <string name="error_invalid_card_name">name is too short</string>
+    <string name="error_invalid_card_expired">4–digit expired date</string>
+    <string name="error_invalid_card_expired_month">2–digit expired month</string>
+    <string name="error_invalid_card_expired_year">4–digit expired year</string>
+    <string name="error_invalid_card_cvv">3–digit security code</string>
+
+    <string name="error_message">Error Message : </string>
+    <string name="error_message_button_ok">OK</string>
+    <string name="error_message_button_cancel">Cancel</string>
+    <string name="error_message_token_expired">Token expired\nPlease Login again,</string>
+
+    <!--    //..Shipping-->
+    <string name="ship_address_title_activity">Shipping Information</string>
+    <string name="ship_address_title">Shipping Address</string>
+    <string name="error_invalid_shipping_name">Please input your name</string>
+    <string name="error_invalid_shipping_phone">Please input your mobile number</string>
+    <string name="error_invalid_shipping_address">Please input shipping address</string>
+
+    <string name="shipping_title_bar">Shipping Status</string>
+    <string name="shipping_title_invoice">Invoice Number</string>
+    <string name="shipping_title_staus">Shipping Status</string>
+
+    <string name="shipping_title_remark">Estimate Delivery Time is 2:30 hours</string>
+    <string name="shipping_button">Back to Appointment</string>
+
+    <string name="shipping_button_address">Select Location</string>
+
+    <!-- calling bar -->
+    <string name="callingbar_title">ถึงเวลาพบแพทย์แล้ว!</string>
+    <string name="callingbar_hello">สวัสดีค่ะคุณ guest</string>
+    <string name="callingbar_detail">ถึงเวลา วีดีโอคอล กับ\n พญ.ชีวีชีวา แล้วค่ะ</string>
+    <string name="callingbar_button">เข้าห้องสนทนา</string>
+
+    <!-- channel consult -->
+    <string name="consult_chat">Chat</string>
+    <string name="consult_voice">Voice</string>
+    <string name="consult_video">VDO</string>
+
+    <!-- tab -->
+    <string name="tab_home">Home</string>
+    <string name="tab_search">Search</string>
+    <string name="tab_favorite">Favorite</string>
+    <string name="tab_calendar">Calendar</string>
+    <string name="tab_profile">Profile</string>
+
+    <!-- Button -->
+    <string name="button_confirm">Confirm</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_finish">Finish</string>
+    <string name="button_logout">Logout</string>
+    <string name="button_start">Start</string>
+    <string name="button_start_application">How may True Health help you today?</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel_appointments">ยกเลิกการนัดหมาย</string>
+    <string name="button_start_conversation">เริ่มการสนทนา</string>
+    <string name="button_login_with_facebook">เข้าสู่ระบบด้วย Facebook</string>
+    <string name="button_edit_profile">แก้ไขข้อมูลส่วนตัว</string>
+    <string name="button_view_appointment">Appointment</string>
+    <string name="button_done">Done</string>
+    <string name="button_dialog_done">Done</string>
+    <string name="button_send">Send</string>
+    <string name="button_next">Next</string>
+    <string name="button_empty_retry">Retry</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+
+    <!-- money -->
+    <string name="money_baht">THB</string>
+    <string name="money_baht_string">%s THB</string>
+    <string name="money_baht_int">%d THB</string>
+    <string name="money_baht_B_int">%d ฿</string>
+    <string name="money_baht_B">฿</string>
+    <string name="money_baht_B_int_per_minute">%d บาท/ 15 นาที</string>
+    <string name="money_baht_double">%1$,.2f บาท</string>
+    <string name="money_double">%1$,.2f</string>
+
+    <!-- Time -->
+    <string name="time_n_str">%s m.</string>
+    <string name="time_minute">mins</string>
+    <string name="time_fifteen_minute">15 mins</string>
+
+    <!-- Term and Condition -->
+    <string name="term_and_condition_application">*Information received from True Health application is only for health consultation and cannot
+        be used to replace the actual diagnosis or treatment from your physician.
+        All consideration and decision are made at your own risks.
+        True Health application cannot be used in case of emergency or life threatening conditions.</string>
+
+    <!-- Dialog -->
+    <string name="dialog_default_title">แจ้งเตือน</string>
+    <string name="dialog_ok_button">OK</string>
+    <string name="dialog_need_button">ต้องการ</string>
+    <string name="dialog_un_need_button">ไม่ต้องการ</string>
+    <string name="dialog_confirm_meeting">ยืนยันการนัดหมาย</string>
+    <string name="dialog_cancel_meeting">ยกเลิกการนัดหมาย</string>
+    <string name="dialog_reason_to_cancel_meet">เหตุผลที่ต้องการยกเลิก</string>
+    <string name="dialog_hint_cancel_meet">(กรุณากรอกเหตุผลเพิ่มเติม..)</string>
+    <string name="dialog_transaction_complete">การทำรายการเสร็จสิ้น</string>
+    <string name="dialog_transaction_complete_desc">ระบบจะทำการบันทึกรายการชำระเงินของท่านลงในอัลบัมภาพโดยอัตโนมัติ และท่านสามารถจัดการการนัดหมายของท่านได้ที่ "ประวัติการนัดพบแพทย์"</string>
+    <string name="dialog_choose_time_appointments">เลือกเวลาพบหมอ</string>
+    <string name="dialog_select_language">เลือกภาษา</string>
+    <string name="dialog_thai_language">ภาษาไทย</string>
+    <string name="dialog_english_language">English</string>
+    <string name="dialog_cancel_appointments">สรุปค่าใช้จ่ายในการยกเลิก</string>
+    <string name="dialog_condition_for_refund">เงื่อนไขการคืนเงิน</string>
+    <string name="dialog_number_refund">จำนวนที่ได้คืน</string>
+    <string name="dialog_term_and_condition_title">ข้อตกลงการใช้งาน</string>
+    <string name="dialog_select_tome_to_alert">เลือกเวลาแจ้งเตือนก่อนเวลา</string>
+    <string name="dialog_forgot_password_title">คุณลืมรหัสผ่านหรือไม่?</string>
+    <string name="dialog_forgot_password_desc">กรุณากรอกอีเมล์ของคุณด้านล่างและเราจะส่งลิงก์เพื่อรีเซ็ตรหัสผ่านของคุณ</string>
+    <string name="dialog_cancel_appointment_doctor_title">ยกเลิกนัด</string>
+    <string name="dialog_cancel_appointment_doctor_desc">คุณต้องการยกเลิกนัดใช่หรือไม่ ?</string>
+    <string name="dialog_login">เข้าสู่ระบบ</string>
+    <string name="dialog_change_password">เปลี่ยนรหัสผ่าน</string>
+    <string name="dialog_old_password">รหัสผ่านเก่า</string>
+    <string name="dialog_new_password">รหัสผ่านใหม่</string>
+    <string name="dialog_confirm_password">ยืนยันรหัสผ่าน</string>
+    <string name="dialog_choose_specialty">เลือกสาขาเฉพาะทาง</string>
+    <string name="dialog_choose_sub_specialty">เลือกสาขาเฉพาะทางต่อยอด</string>
+    <string name="dialog_logout">ออกจากระบบ?</string>
+    <string name="dialog_exit_application">Do you want exit application?</string>
+    <string name="dialog_exit_conversation">คุณต้องการออกจากการสนทนา?</string>
+    <string name="dialog_confirm_delete_picture">คุณต้องการลบรูปภาพใช่หรือไม่</string>
+    <string name="dialog_confirm_delete">คุณต้องการลบใช่หรือไม่</string>
+    <string name="dialog_delete_current_day">ลบเฉพาะวันนี้</string>
+    <string name="dialog_delete_every_week">ลบทุกสัปดาห์</string>
+    <string name="dialog_delete_slot">การปิดตารางทำงานจะไม่มีผลยกเลิกการนัดหมายที่เกิดขึ้นแล้ว</string>
+    <string name="dialog_please_selected_date">กรุณาเลือกวันที่</string>
+    <string name="dialog_please_selected_time">กรุณาเลือกเวลาพบหมอ</string>
+    <string name="dialog_please_selected_contact">กรุณาเลือกช่องทางการปรึกษา</string>
+    <string name="dialog_selected_contact">เลือกช่องทางการปรึกษา</string>
+
+    <string name="dialog_doctor_calendar_title">Select Date</string>
+    <string name="dialog_doctor_no_slot">Time not available</string>
+
+    <!-- Dialog Input OTP-->
+    <string name="dialog_otp_title">Verification code</string>
+    <string name="dialog_button_confirm">Confirm</string>
+    <string name="dialog_button_renew">Request OTP</string>
+
+    <!-- Dialog Send Address-->
+    <string name="dialog_send_title">Send to address</string>
+    <string name="dialog_send_name">Name…</string>
+    <string name="dialog_send_lastname">Lastname…</string>
+    <string name="dialog_send_address">Address…</string>
+
+    <!-- Dialog Old Password-->
+    <string name="dialog_password_title">Current Password</string>
+    <string name="dialog_password_hint">current password</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Login -->
+    <string name="login_title_signin1">Patient Registration</string>
+    <string name="login_title_signin2">จากมือถือของท่าน</string>
+    <string name="login_title_phone_number">Sign in with phone number</string>
+    <string name="login_title_signing_up">By signing up</string>
+    <string name="login_title_signing_agree">Your agree to the Term of Service</string>
+    <string name="login_title_or"> OR </string>
+    <string name="login_title_email">Login with E–mail account</string>
+    <string name="login_consent_info">By clicking on ‘Sign in’ above, you confirm that you have read and agreed to our Terms &amp; Conditions and Privacy Policy to use the services.</string>
+    <string name="login_consent_info_link">Terms &amp; Conditions</string>
+    <string name="login_consent_privacy_link">Privacy Policy</string>
+
+    <string name="login_hint_country">เลือกประเทศ</string>
+    <string name="login_hint_phone_number">กรอกเบอร์โทรฯ</string>
+
+    <string name="login_button_signup">เข้าใช้งานด้วยอีเมล์</string>
+    <string name="login_button_facebook">Sign in with Facebook</string>
+    <string name="login_button_request_otp">กดรับรหัส</string>
+    <string name="login_condition_msg1">การเข้าใช้งานถือเป็นการยอมรับ</string>
+    <string name="login_condition_msg2">ข้อกำหนดของ Chiwii</string>
+    <string name="title_activity_confirm_otp">ConfirnOTPActivity</string>
+
+
+    <!-- Login Phone -->
+    <string name="login_phone_title">Welcome to True Health</string>
+    <string name="login_phone_title_sub">Phone number</string>
+    <string name="login_phone">081–234–5678</string>
+
+    <!-- Login Password -->
+    <string name="login_password_title">Welcome to True Health</string>
+    <string name="login_password_title_sub">Please fill in your password</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_forgot">Forgot password?</string>
+
+    <!-- Login Email -->
+    <string name="login_email_title">ยินดีต้อนรับค่ะ</string>
+    <string name="login_email_title_sub">กรุณากรอก อีเมล ของคุณ</string>
+    <string name="login_email_subtitle">อีเมล และ รหัสผ่าน</string>
+    <string name="login_email_hint">email@gmail.com</string>
+    <string name="login_email_hint_user">ชื่อผู้ใช้งาน,อีเมล</string>
+    <string name="login_email_hint_password">รหัสผ่าน</string>
+    <string name="login_email_forgot_password">ลืมรหัสผ่าน?</string>
+    <string name="login_email_no_register">ยังไม่มีบัญชีกับเรา</string>
+    <string name="login_email_title_or"> หรือ </string>
+    <string name="login_email_link_doctor">หากคุณคือแพทย์ / ผู้เชี่ยวชาญ</string>
+    <string name="login_email_button_login">Go Live !</string>
+    <string name="login_email_button_signup">คลิกเพื่อลงทะเบียน</string>
+
+    <!--  Login Pin  -->
+    <string name="login_pin_hint_pin">123456</string>
+
+    <!--  Create Pin  -->
+    <string name="create_pin_hint_pin">123456</string>
+
+    <!-- Confirm OTP -->
+    <string name="confirm_otp_title_sms">รหัส OTP สำหรับการเข้าใช้งาน True Health คือ : %1$s</string>
+    <string name="confirm_otp_title">กรอกรหัส OTP ที่ได้รับจาก SMS</string>
+    <string name="confirm_otp_subtitle" />
+    <string name="confirm_otp_nosend">ไม่ได้รับ OTP ? </string>
+    <string name="confirm_otp_resend">ส่งใหม่อีกครั้ง</string>
+    <string name="confirm_otp_hint_otp">OTP No.</string>
+    <string name="confirm_otp_condition_msg1">การเข้าใช้งานถือเป็นการยอมรับ</string>
+    <string name="confirm_otp_condition_msg2">ข้อกำหนดของ True Health</string>
+    <string name="confirm_otp_button">Go Live! เริ่มใช้งาน</string>
+
+    <!-- Login PIN -->
+    <string name="login_pin_title">Welcome to electronic health record,\nPlease input Your PIN</string>
+    <string name="create_pin_title">Welcome to electronic health record,\nPlease create PIN for using</string>
+
+    <!-- Signup -->
+    <string name="signup_head_title">True Health สวัสดีค่ะ :)</string>
+    <string name="signup_title">กรอกชื่อผู้ใช้งาน อีเมล</string>
+    <string name="signup_subtitle">และตั้งรหัสผ่าน เพีื่อเข้าใช้งาน</string>
+    <string name="signup_hint_user">ชื่อผู้ใช้งาน</string>
+    <string name="signup_hint_email">อีเมล</string>
+    <string name="signup_condition_msg1">การเข้าใช้งาน ถือเป็นการยอมรับ</string>
+    <string name="signup_condition_msg2">ข้อกำหนดของ True Health</string>
+    <string name="signup_button_password">ตั้งรหัสผ่าน</string>
+
+    <!-- Signup Success -->
+    <string name="signup_success_head_title">รับรองตัวตนผ่านอีเมล</string>
+    <string name="signup_success_title" />
+    <string name="signup_success_subtitle">ใกล้พร้อมเข้าใช้งานแล้วค่ะ :)</string>
+    <string name="signup_success_msg1">เช็คอีเมล และยืนยัน</string>
+    <string name="signup_success_msg2">ก่อนเข้าใช้งาน True Health</string>
+    <string name="signup_success_condition_msg1">ไม่ได้รับอีเมล? </string>
+    <string name="signup_success_condition_msg2" />
+    <string name="signup_success_resend_email">ส่งใหม่อีกครั้ง</string>
+    <string name="signup_success_resend_email_success">ส่งอีเมลเรียบร้อยแล้ว</string>
+    <string name="signup_success_button">Go Live! เริ่มใช้งาน</string>
+
+    <string name="signup_success_head_title_confirm">เริ่มใช้งาน</string>
+    <string name="signup_success_subtitle_confirm">บัญชีพร้อมใช้งานแล้วค่ะ :)</string>
+    <string name="signup_success_msg1_confirm">ค้นหาคุณหมอ / ผู้เชี่ยวชาญ</string>
+    <string name="signup_success_msg2_confirm">เพื่อนัดหมายและปรึกษา ได้แล้วค่ะ :)</string>
+
+    <string name="signup_success_thankyou">THANK YOU\n FOR SIGNING UP</string>
+    <string name="signup_success_message">ลงทะเบียนเรียบร้อย</string>
+    <string name="signup_success_footer">กรุณากรอกข้อมูลส่วนตัวของคุณ\n เพื่อเป็นประโยชน์ต่อการใช้งานแอพพลิเคชัน</string>
+
+
+    <!-- Password Create -->
+    <string name="password_head_title">ตั้งรหัสผ่าน</string>
+    <string name="password_title" />
+    <string name="password_subtitle">ตั้งรหัสผ่าน และเริ่มใช้งาน</string>
+    <string name="password_hint_password">ตั้งรหัสผ่าน</string>
+    <string name="password_hint_confirm_password">ยืนยันรหัสผ่าน</string>
+    <string name="password_condition_msg1" />
+    <string name="password_condition_msg2" />
+    <string name="password_button">Go Live! เริ่มใช้งาน</string>
+
+    <!-- Forgot Password -->
+    <string name="forgot_password_head_title">กรณีที่ท่านลืมรหัสผ่าน</string>
+
+    <string name="forgot_password_title">Forget Password</string>
+    <string name="forgot_password_subtitle">Please input your OTP</string>
+    <string name="forgot_password_phone_number">Telephone Number</string>
+    <string name="forgot_password_otp">OTP</string>
+    <string name="forgot_password_ref_code">Ref Code : %s</string>
+    <string name="forgot_password_btn_resend">Resend</string>
+    <string name="forgot_password_second">%s Second</string>
+    <string name="forgot_password_btn_submit">Confirm OTP</string>
+    <string name="forgot_password_dialog_cancel_title">Do you want to cancel Forgot password ?</string>
+
+    <!--  Set password  -->
+    <string name="set_password_title">Set Password</string>
+    <string name="set_password_password_new">New Password</string>
+    <string name="set_password_password_confirm">Confirm New Password</string>
+    <string name="set_password_btn_submit">Set password</string>
+    <string name="set_password_success">Your password has been changed.</string>
+    <string name="set_password_dialog_cancel_title">Do you want to cancel set new password ?</string>
+
+    <string name="forgot_password_hint_useremail">ชื่อผู้ใช้งาน อีเมล</string>
+    <string name="forgot_password_hint">Verification code</string>
+    <string name="forgot_password_condition_msg1" />
+    <string name="forgot_password_condition_msg2" />
+    <string name="forgot_password_button">Request OTP</string>
+    <string name="forgot_password_success">Change password success</string>
+    <string name="button_golive">Go Live! เริ่มใช้งาน</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    <!-- Toolbar -->
+    <string name="toolbar_action_help">ช่วยเหลือ</string>
+    <string name="toolbar_title_username">สวัสดีค่ะ คุณ </string>
+    <!-- Home -->
+    <string name="action_expand_more">หน้าย่อ</string>
+    <string name="action_expand_less">หน้าเต็ม</string>
+
+
+    <string name="setting_activity_title">ข้อมูลส่วนตัว</string>
+    <!-- Setting User Profile -->
+    <string name="setting_profile_title">Setting</string>
+    <string name="setting_profile_login">User Login</string>
+    <string name="setting_profile_old_password">Current Password</string>
+    <string name="setting_profile_password_create">Password*</string>
+    <string name="setting_profile_password_confirm_create">Confirm Password*</string>
+    <string name="setting_profile_title_password">Set password</string>
+    <string name="setting_profile_password">New password</string>
+    <string name="setting_profile_password_confirm">Confirm new password</string>
+    <string name="setting_profile_password_hint">password…</string>
+    <string name="setting_profile_password_confirm_hint">confirm password…</string>
+    <string name="setting_profile_name">Display name</string>
+    <string name="setting_profile_name_hint">Display name…</string>
+    <string name="setting_profile_application">Setting</string>
+    <string name="setting_profile_success">Update Success</string>
+
+    <string name="change_password_title">Set password</string>
+    <string name="change_password_password">New password</string>
+    <string name="change_password_password_old">Old password</string>
+    <string name="change_password_password_confirm">Confirm new password</string>
+    <string name="change_password_btn_change_password">Change Password</string>
+    <string name="change_password_success">Your password has been changed.</string>
+
+    <string name="update_profile_title">Profile</string>
+    <string name="update_profile_username">Username</string>
+    <string name="update_profile_email">Email</string>
+    <string name="update_profile_telephone_number">Telephone Number</string>
+    <string name="update_profile_btn_update_profile">Update Profile</string>
+    <string name="update_profile_success">Your profile has been changed.</string>
+
+    <string name="change_pin_title">Change PIN</string>
+    <string name="change_pin_pin_old">Old PIN</string>
+    <string name="change_pin_pin_new">New PIN</string>
+    <string name="change_pin_pin_new_confirm">Confirm new PIN</string>
+    <string name="change_pin_btn_pin_forgot"><u>Forget PIN</u></string>
+    <string name="change_pin_btn_change_pin">Change PIN</string>
+    <string name="change_pin_success">Your PIN has been changed.</string>
+
+    <string name="pin_forgot_otp_title">Forget PIN</string>
+    <string name="pin_forgot_otp_desc">Please input your OTP</string>
+    <string name="pin_forgot_otp_phone_number">Telephone Number</string>
+    <string name="pin_forgot_otp_otp">OTP</string>
+    <string name="pin_forgot_otp_ref_code">Ref Code: %s</string>
+    <string name="pin_forgot_otp_btn_resend">Resend</string>
+    <string name="pin_forgot_otp_second">%s Second</string>
+    <string name="pin_forgot_otp_btn_submit">Confirm OTP</string>
+    <string name="pin_forgot_otp__title_confirm_cancel">Do you want to cancel Forget PIN transaction?</string>
+
+    <string name="pin_forgot_set_pin_title">Set-up PIN</string>
+    <string name="pin_forgot_set_pin_desc">Please set-up your PIN Code to access confidential information</string>
+    <string name="pin_forgot_set_pin_pin">PIN</string>
+    <string name="pin_forgot_set_pin_pin_confirm">Confirm PIN</string>
+    <string name="pin_forgot_set_pin_btn_submit">Change PIN</string>
+    <string name="pin_forgot_set_pin_success">Set-up PIN success</string>
+
+    <!-- Setting App -->
+    <string name="setting_app_title">Setting</string>
+    <string name="setting_app_version">Version</string>
+    <string name="setting_app_fag">FAQ</string>
+    <string name="setting_app_howtouse">Manual</string>
+    <string name="setting_app_term">Terms and Conditions</string>
+    <string name="setting_app_privacy">Privacy Policy</string>
+    <string name="setting_app_lang">Language setting / ตั้งค่าภาษา</string>
+    <!-- Setting App Language-->
+    <string name="setting_lang_title">Setting Language</string>
+
+    <string name="setting_account_setting">ACCOUNT SETTING</string>
+    <string name="setting_profile">Profile</string>
+    <string name="setting_change_password">Change Password</string>
+    <string name="setting_change_pin">Change PIN</string>
+    <string name="setting_payment_method">Payment method</string>
+    <string name="setting_langauge">LANGUAGE</string>
+    <string name="setting_lang_th">ภาษาไทย</string>
+    <string name="setting_lang_en">English</string>
+    <string name="setting_policies">POLICIES</string>
+    <string name="setting_privacy_policy">Privacy Policy</string>
+    <string name="setting_terms_and_condition">Terms and Conditions</string>
+    <string name="setting_faq_and_manuals">FAQ and Manual</string>
+    <string name="setting_faq">FAQ</string>
+    <string name="setting_manuals">Manual</string>
+    <string name="setting_logout">Sign out</string>
+
+    <!-- Product -->
+    <string name="product_cart_title">Promotion</string>
+    <string name="product_buttun_buy">Order</string>
+    <string name="product_buttun_payment">Confirm Payment</string>
+    <string name="product_buy_success">Order has been placed</string>
+    <string name="product_title_shipping">Ship to</string>
+    <string name="product_hint_shipping_name">Name</string>
+    <string name="product_hint_shipping_phone">Phone</string>
+    <string name="product_hint_shipping_address">Address</string>
+    <string name="product_confirm_price">Product price</string>
+    <string name="product_vat">VAT</string>
+    <string name="product_shipping">Shipping Fee</string>
+    <string name="product_discount">Discount</string>
+    <string name="product_total">Total price</string>
+
+    <string name="doctor_product_cart_title">แนะนำสินค้า</string>
+    <string name="doctor_buttun_suggest">บันทึกแนะนำสินค้า</string>
+    <string name="doctor_buttun_payment">ชำระเงิน</string>
+    <string name="doctor_promotion_title">ลดราคาเหลือ</string>
+
+
+    <!-- Setting doctor -->
+    <string name="setting_doctor_version">เวอร์ชั่น</string>
+    <string name="setting_doctor_change_language">เปลี่ยนภาษา</string>
+    <string name="setting_doctor_report_problem">แจ้งปัญหา</string>
+    <string name="setting_doctor_how_to_use">วิธีการใช้งาน</string>
+    <string name="setting_doctor_term_and_condition">ข้อกำหนดและเงื่อนไข</string>
+
+    <!-- Detail doctor -->
+    <string name="detail_doctor_info_schedule_meeting">ข้อมูลตารางนัดพบหมอ</string>
+    <string name="detail_doctor_meet_doctor_button">ทำการนัดหมายแพทย์</string>
+    <string name="detail_doctor_cancel_meet_doctor_button">ยกเลิกการนัดหมาย</string>
+    <string name="detail_doctor_favorite">คุณได้ทำการเพิ่มข้อมูลหมอในรายการโปรด</string>
+    <string name="detail_doctor_specialize">ความเชี่ยวชาญเฉพาะทาง</string>
+    <string name="detail_doctor_certificate">วุฒิบัตร</string>
+    <string name="detail_doctor_study">ประวัติการทำงาน</string>
+    <string name="detail_doctor_reviews">+%d Reviews</string>
+
+    <string name="detail_doctor_price_title">ค่าบริการในการให้คำปรึกษา</string>
+    <string name="detail_doctor_price_per_minute"> / 15 นาที</string>
+
+
+    <string name="detail_doctor_info">ข้อมูลแพทย์</string>
+    <string name="detail_doctor_worked">ประวัติการทำงาน</string>
+    <string name="detail_doctor_education">ประวัติการศึกษา</string>
+    <string name="detail_doctor_title_consulting">เลือกช่องทางนัดปรึกษา</string>
+
+
+    <string name="doctor_detail_specialize">Specialty</string>
+    <string name="doctor_detail_certificate">Certification</string>
+    <string name="doctor_detail_career">Work experience</string>
+    <string name="doctor_detail_specialize_description">ภูมแพ้ในเด็ก</string>
+    <string name="doctor_detail_certificate_description">– ภูมแพ้ในเด็ก\n– เลือกช่องทางนัดปรึกษา</string>
+    <string name="doctor_detail_career_description">กรุงเทพมหานคร</string>
+    <string name="doctor_detail_lang_th">TH</string>
+    <string name="doctor_detail_lang_en">EN</string>
+    <string name="doctor_detail_button_appointment">Make an appointment</string>
+
+    <string name="list_doctor_next_timeslot">Available in %d minutes</string>
+    <string name="list_doctor_next_available">Available in %s</string>
+    <string name="list_doctor_price">THB 150 / 15minutes</string>
+
+    <!-- Appointments doctor -->
+    <string name="appointments_doctor_choose_day_to_meet_doctor">เลือก วัน ที่ต้องการพบหมอ</string>
+    <string name="appointments_doctor_choose_time_meet_doctor">เลือกเวลาพบหมอ</string>
+    <string name="appointments_doctor_input_to_your_benefit">กรุณากรอกเพื่อประโยชน์ของท่านในการปรึกษาแพทย์</string>
+    <string name="appointments_doctor_main_symptoms">อาการสำคัญ</string>
+    <string name="appointments_doctor_history_drug_allergy">ประวัติแพ้ยา</string>
+    <string name="appointments_doctor_confirm_term_and_condition">ยืนยันข้อตกลงในเงื่อนไข</string>
+    <string name="appointments_doctor_watch_term_and_condition">ดูข้อตกลงในเงื่อนไข</string>
+    <string name="appointments_doctor_continue_button">ดำเนินการต่อ</string>
+    <string name="appointments_doctor_date_now">วันนี้, %s</string>
+    <string name="appointments_doctor_selected_time_before">กรุณาเลือกวันและเวลาก่อน</string>
+    <string name="appointments_doctor_title_contact_phone_1">กรุณาระบุหมายเลขติดต่อ</string>
+    <string name="appointments_doctor_title_contact_phone_2">(ใช้เพื่อการนัดหมายและแจ้งเตือนนัด)</string>
+    <string name="appointments_doctor_title_email">กรุณาระบุอีเมลติดต่อ</string>
+
+    <!-- main category -->
+    <string name="home_button_department">Specialty</string>
+    <string name="home_button_clinic">Clinics</string>
+    <string name="home_button_featured">Featured</string>
+    <string name="home_button_healthcare">Please select your symptom</string>
+    <string name="home_button_promotion">Promotions</string>
+    <string name="home_button_news">Featured</string>
+    <string name="home_button_promotion2">Promotions</string>
+    <string name="home_button_news2">Articles</string>
+    <string name="home_doctor_standby_title">Soonest availability</string>
+
+    <!-- Appointment -->
+    <string name="appointment_title">Consultation History</string>
+    <string name="appointment_tag_time">Sort by time</string>
+    <string name="appointment_tag_doctor">Sort by doctor</string>
+    <string name="appointment_date">Date</string>
+    <string name="appointment_time">Time</string>
+    <string name="appointment_time_available">Available</string>
+    <string name="appointment_channel">Channel</string>
+    <string name="appointment_no">Appointment number</string>
+    <string name="appointment_next_timeslot">Next availability</string>
+    <string name="appointment_next_timeslot_select">Choose others</string>
+    <string name="appointment_date_select">Select Date</string>
+    <string name="appointment_channel_select">Channel</string>
+    <string name="appointment_consult_person">บุคคลที่ขอรับการปรึกษา</string>
+    <string name="appointment_contact_admin">Please contact administrator via chat button (right lower corner of the screen) or Line@: @truehealthsupport</string>
+    <string name="appointment_button_next">Next</string>
+    <string name="appointment_notfound">Appointment not found</string>
+    <string name="appointment_channel_notfound">Channel not found</string>
+
+    <!-- Appointment Patient-->
+    <string name="appointment_tag_new">Upcoming</string>
+    <string name="appointment_tag_past">Past</string>
+    <string name="appointment_tag_history">Consultation History</string>
+    <string name="appointment_tag_cancel">Cancelled</string>
+    <string name="appointment_tag_favorite">Favorite</string>
+    <string name="appointment_tag_every">Every</string>
+    <string name="appointment_empty">Appointment not found</string>
+
+    <string name="appointment_button_start">Enter the consultation room</string>
+    <string name="appointment_button_cancel">Cancel this appointment</string>
+    <string name="appointment_button_view_cancel">Reason for cancellation</string>
+    <string name="appointment_button_send_note">Send Doctor\'s Note</string>
+    <string name="appointment_button_view_note">View Doctor\'s Note</string>
+    <string name="appointment_button_send_opd">Send OPD Card</string>
+
+    <string name="appointment_button_send_status">Shipping Status</string>
+
+    <string name="appointment_cancel_condition">** Cancelation policy **
+            \n1. Payment is non–refundable, if the cancelation is made less than 24 hours prior to the appointed time.
+            \n2. If the cancelation is made more than 24 hours prior to the appointed time, you will automatically receive a coupon code.</string>
+
+    <string name="appointment_title_create">Make an Appointment</string>
+    <string name="appointment_create_title">Please provide useful data for your doctor</string>
+    <string name="appointment_create_title2">Main concern</string>
+    <string name="appointment_create_title2_hint">Symptom, Duration, Preliminary questions.</string>
+    <string name="appointment_create_allergy">Allergy history</string>
+    <string name="appointment_create_allergy_hint">Food, Medication, Others</string>
+    <string name="appointment_create_email">Email*\n(Appointment confirmation will be sent to this email)</string>
+    <string name="appointment_create_phone">Phone number*\n(Please provide your phone number to receive a reminder)</string>
+    <string name="appointment_create_condition">Allow access to my medical data</string>
+    <string name="appointment_create_condition_link">terms&amp;conditions</string>
+    <string name="appointment_dialog_person_next">Confirm</string>
+
+    <!-- Appointment Cancel -->
+    <string name="appointment_cancel_title">Cancel this appointment</string>
+    <string name="appointment_cancel_button">Cancel this appointment</string>
+    <string name="appointment_cancel_reason">Please provide reason for this cancellation</string>
+    <string name="appointment_cancel_success">Appointment has been cancelled</string>
+    <string name="appointment_cancel_button_back">Back to Appointment</string>
+
+    <string name="appointment_cancel_dialog_title">Please make sure that you have read and accepted the cancelation condition.</string>
+    <string name="appointment_cancel_dialog_no">No</string>
+    <string name="appointment_cancel_dialog_ok">Confirm</string>
+
+    <!-- Appointment Confirm -->
+    <string name="appointment_confirm_coupon">Coupon code</string>
+    <string name="appointment_confirm_coupon_hint">Coupon code</string>
+    <string name="appointment_confirm_payment_code_hint">Money transfer code from Admin</string>
+    <string name="appointment_confirm_condition">I have read and accepted the payment and cancelation policy</string>
+    <string name="appointment_confirm_condition_link">I have read and accepted the payment and cancelation policy</string>
+    <string name="appointment_confirm_button">Confirm</string>
+    <string name="appointment_confirm_price">Price</string>
+    <string name="appointment_confirm_description">*ข้อมูลและการโต้ตอบในแอพพลิเคชั่น</string>
+    <!-- Bank -->
+    <string name="bank_title">Account information</string>
+    <string name="bank_kbank_name">KBANK Chiwiborirak</string>
+    <string name="bank_kbank_account">013–3–71511–8</string>
+    <string name="bank_tranfer_detail">Please send us the payment confirmation via the chat icon on the right lower corner of the screen.</string>
+    <string name="bank_tranfer_title_attach">Please, attach proof of payment to confirm your appointment.</string>
+    <string name="bank_tranfer_button_attach">Attach file</string>
+    <string name="error_invalid_bank_attach_file">Please attach file.</string>
+
+    <!-- Appointment Success -->
+    <string name="appointment_success_title">Appointment successfully made</string>
+    <string name="appointment_success_thankyou">Thank you for using True Health</string>
+    <string name="appointment_success_save">Save picture success</string>
+    <!-- Pricing -->
+    <string name="price_title_doctor">Consultation fee</string>
+    <string name="price_title_fee">Service fee</string>
+    <string name="price_title_discount">Discount</string>
+    <string name="price_title_total">Total price</string>
+    <string name="price_title_paid">%d THB</string>
+
+    <!-- Payment -->
+    <string name="payment_title_amount">Amount</string>
+    <string name="payment_title_channel">Please select payment method</string>
+    <string name="payment_button_credit_card">Credit card</string>
+    <string name="payment_button_bank_transfer">Bank transfer</string>
+    <string name="payment_button_prompt_pay">PromptPay</string>
+
+    <!-- Credit card -->
+    <string name="creditcard_title">Credit card information</string>
+    <string name="creditcard_number">Card number</string>
+    <string name="creditcard_name">Name as appear on credit card</string>
+    <string name="creditcard_expire">Exp date</string>
+    <string name="creditcard_expire_month">08</string>
+    <string name="creditcard_expire_year">2019</string>
+    <string name="creditcard_cvv">CVV</string>
+    <string name="creditcard_remember">Remember credit card</string>
+
+    <!-- Payment Bank Transfer-->
+    <string name="payment_title_bank_transfer">Account information</string>
+    <string name="payment_title_bank_information">Please contact us via intercom after the transfer</string>
+
+    <!-- Bank -->
+    <string name="bank_title_tfb">KBANK</string>
+    <string name="bank_title_bbl">BBL</string>
+    <string name="bank_title_scb">SCB</string>
+    <string name="bank_title_tfb_account">025–3–50878–7</string>
+    <string name="bank_title_bbl_account">045–3–50878–7</string>
+    <string name="bank_title_scb_account">088–3–50878–7</string>
+
+    <!--  PromptPay  -->
+    <string name="promptpay_title">Payment</string>
+    <string name="promptpay_scan_info">Please use saved QR Code\nto pay via PromptPay</string>
+    <string name="promptpay_timer">%s Minutes</string>
+    <string name="promptpay_qrcode_expired">The QR code was expire</string>
+    <string name="promptpay_title_confirm_cancel_payment">This appointment will be cancelled.</string>
+    <string name="promptpay_desc_confirm_cancel_payment">Do you want to cancel PrompPay payment?</string>
+    <string name="promptpay_btn_confirm_payment_success">Confirm payment</string>
+    <string name="promptpay_save_image_success">Your QR Code has been saved to your Photos.</string>
+    <string name="promptpay_save_image_failed">Save image is failed</string>
+
+    <!-- mockup -->
+    <string name="mockup_doctor_name">นพ. สมชาย ใจดี นามสกุลชีวีบริรักษ์</string>
+    <string name="mockup_doctor_special">ภูมแพ้</string>
+    <string name="mockup_doctor_description">ภูมแพ้, โรคทางเดินหายใจ</string>
+    <string name="mockup_doctor_price">150 บาท/15 นาที</string>
+    <string name="mockup_appointment_date">20 April 2018</string>
+    <string name="mockup_appointment_time">20.00 น.</string>
+    <string name="mockup_appointment_channel">Video Call</string>
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z–axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z–axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z–axis and has a standard 1dp thickness.\n"
+        "On the web, the z–axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y–axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z–axis. On the web, shadows are depicted by manipulating the "
+        "y–axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="section_format">1</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="symptom_title">ปรึกษาด้านชลอวัย</string>
+
+    <!-- articles-->
+    <string name="article_title">Featured</string>
+    <!-- doctor articles-->
+    <string name="article_doctor_title">Articles</string>
+    <string name="article_doctor_bottom_title">เพิ่มบทความ/คลิป</string>
+    <string name="article_doctor_bottom_write">เขียนบทความ</string>
+    <string name="article_doctor_bottom_upload_clip">อัพโหลดคลิป</string>
+
+    <string name="article_doctor_detail_title">ชื่อบทความ</string>
+    <string name="article_doctor_detail_description">เขียนบทความของคุณที่นี่</string>
+    <string name="article_doctor_detail_category">Article Category</string>
+    <string name="article_doctor_detail_category_clip">เลือกหมวดหมู่คลิป</string>
+
+    <string name="article_write_name">ชื่อบทความ…</string>
+    <string name="article_write_detail">เขียนบทความของคุณที่นี่…</string>
+    <string name="article_write_category">Article Category</string>
+
+    <string name="article_clip_name">ชื่อคลิป…</string>
+    <string name="article_clip_detail">ข้อความย่อเกี่ยวกับคลิปของคุณ…</string>
+    <string name="article_clip_category">เลือกหมวดหมู่คลิป</string>
+    <string name="article_success">บันทึกบทความ/คลิป สำเร็จ</string>
+
+    <!-- tokbox -->
+    <string name="timeleft">Time left %s minutes</string>
+    <string name="wait_for_connector">Please wait for the doctor</string>
+    <string name="setting">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="network_connected">network connect</string>
+    <string name="network_disconnect">Please check your internet connection.</string>
+    <string name="conversation_with">คุณกำลังสนทนากับ %s แตะเพื่อกลับไป</string>
+    <string name="location_enabled">Turn On Location Services to Allow</string>
+    <string name="call_time_out">Time Out</string>
+
+    <string name="rationale_voice_app">This app needs access to your mic so you can perform voice calls</string>
+    <string name="rationale_video_app">This app needs access to your camera and mic so you can perform video calls</string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+    <string name="title_settings_dialog">Permissions Required</string>
+
+    <string name="title_chat_activity">Chat</string>
+    <string name="title_voice_activity">Voice call</string>
+    <string name="title_video_activity">Video call</string>
+    <string name="chat_title">Chat</string>
+    <string name="voice_title">Voice call</string>
+    <string name="video_title">Video call</string>
+
+    <string name="room_exit_title">Exit this conversation?</string>
+    <string name="room_exit_no">No</string>
+    <string name="room_exit_yes">Exit</string>
+    <string name="room_show_success">Conversation success</string>
+
+    <!-- Rating -->
+    <string name="rating_title">Rating</string>
+    <string name="rating_suggest_hint">Recommendation…</string>
+
+    <!-- Doctor Note -->
+    <string name="doctor_note_title">ส่ง Doctor’s Note ให้คนไข้</string>
+    <string name="doctor_button_note">เขียน Doctor’s Note</string>
+    <string name="doctor_button_suggess_product">แนะนำสินค้า</string>
+    <string name="doctor_button_suggess_medicine">แนะนำยา</string>
+    <string name="doctor_button_view_note">เรียกดูสรุป Doctor’s Note</string>
+    <string name="doctor_note_description">*แพทย์สามารถส่ง Doctor’s Note, แนะนำสินค้า, แนะนำยา\nให้คนไข้ได้ ภายใน 6 ชม. หลังการปรึกษา เท่านั้น</string>
+    <string name="doctor_note_appointment">การนัดหมาย</string>
+
+    <string name="doctor_write_title">เขียน Doctor’s Note</string>
+    <string name="doctor_write_appointment">Appointment</string>
+    <string name="doctor_write_edit_title">Summary Note</string>
+    <string name="doctor_write_button_send">บันทึก Doctor’s Note</string>
+    <string name="doctor_write_button_no">ไม่ใช่</string>
+    <string name="doctor_write_dialog_title">คุณต้องการบันทึก Doctor’s Note?</string>
+    <string name="doctor_shortnote_success">บันทึก Doctor’s Note สำเร็จ</string>
+    <!-- Doctor Note Confirm-->
+    <string name="doctor_note_confirm_title">Consultation summary</string>
+    <string name="doctor_note_confirm_button_send">ส่ง Doctor’s Note ให้คนไข้</string>
+    <string name="doctor_note_confirm_dialog_title">คุณต้องการส่ง Doctor’s Note ให้คนไข้?</string>
+    <string name="doctor_note_confirm_success">ส่ง Doctor’s Note ให้คนไข้สำเร็จ</string>
+    <string name="doctor_note_confirm_suggess_product">Product recommendation</string>
+    <string name="doctor_note_confirm_suggess_medicine">Treatment recommendation</string>
+    <!-- Doctor PPD Card -->
+    <string name="doctor_opdcard_title">เขียน OPD Card</string>
+    <string name="doctor_opdcard_edit_title">OPD Card จากแพทย์</string>
+    <string name="doctor_opdcard_button_send">ส่ง OPD Card</string>
+    <string name="doctor_opdcard_dialog_title">คุณต้องการส่ง OPD Card?</string>
+    <string name="doctor_opdcard_success">ส่ง OPD Card สำเร็จ</string>
+
+    <!-- Doctor Suggest Product -->
+    <string name="doctor_suggess_product_dialog_title">คุณต้องการบันทึกแนะนำสินค้านี้?</string>
+    <string name="doctor_suggess_product_button_send">บันทึกแนะนำสินค้า</string>
+    <string name="doctor_suggess_product_success">บันทึกแนะนำสินค้าสำเร็จ</string>
+
+    <!-- Doctor Suggest Medicine -->
+    <string name="doctor_suggess_medicine_title">แนะนำยา</string>
+    <string name="doctor_suggess_medicine_dialog_title">คุณต้องการบันทึกแนะนำยาให้คนไข้?</string>
+    <string name="doctor_suggess_medicine_button_send">บันทึกแนะนำยาให้คนไข้</string>
+    <string name="doctor_suggess_medicine_success">บันทึกแนะนำยาให้คนไข้สำเร็จ</string>
+
+    <string name="medicine_name">Medicine</string>
+    <string name="medicine_quantity">Amount</string>
+    <string name="medicine_method">Instruction</string>
+
+    <string name="doctor_note_expired_buy_medicine">* Will end the purchase medicines within 24 hours.\n* Operating hours for medicine delivery in Bangkok and nearby vicinity 08.00 – 19.00</string>
+
+    <!-- twilio -->
+    <string name="room_status">status</string>
+    <string name="error_retrieving_access_token">Error retrieving token</string>
+    <string name="log_out">Log Out</string>
+    <string name="permissions_needed">Camera and Microphone permissions needed. Please allow in App Settings for additional functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="codec_title">Set your preferred audio and video codec. Not all codecs are supported with Group rooms. The media server will fallback to OPUS or VP8 if a preferred codec is not supported.</string>
+    <string name="pref_title_audio_codec">Audio Codec</string>
+    <string name="pref_title_video_codec">Video Codec</string>
+    <string name="sender_bandwidth_constraints">Set sender bandwidth constraints. Zero represents the WebRTC default value which varies by codec.</string>
+    <string name="max_audio_bitrate">Max Audio Bitrate (bits per second)</string>
+    <string name="max_video_bitrate">Max Video Bitrate (bits per second)</string>
+    <string name="turn_speaker_on">Speaker ON</string>
+    <string name="vp8_simulcast">VP8 Simulcast</string>
+
+    <string name="select_file_from">Source File</string>
+    <string name="photo_gallery">Photo Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="file_size_must_not_greater_than_mb">File size not over %.1f MB</string>
+
+    <!--EHR-->
+    <string name="coupons_code_hint">Enter Code</string>
+    <string name="name_hint">Name</string>
+    <string name="last_name_hint">Surname</string>
+    <string name="delivery_address_hint">Shipping Address</string>
+    <string name="title_hint">Enter topics</string>
+    <string name="date_survey_hint">diagnose date</string>
+    <string name="pregnant_place_hint">diagnose at</string>
+    <string name="explain_hint">description</string>
+    <string name="name_dispense_place_hint">dispensator/buy medicine at</string>
+    <string name="name_inspector_place_hint">doctor name/diagnose place</string>
+
+    <string name="dialog_accept_not_allergic_medication_title">Please confirm that you did not have allergy for these medicine</string>
+    <string name="dialog_not_accept_medication">No</string>
+    <string name="dialog_accept_medication">Yes, I did not have an allergy for these medicine</string>
+    <string name="dialog_delivery_title">Name – Address for delivery</string>
+    <string name="dialog_input_name">Enter Name</string>
+    <string name="dialog_family_member_title">Choose a family member</string>
+    <string name="dialog_family_member_desc">who needs to fix medical records</string>
+    <string name="dialog_new_family_title">Enter family member name\nto create medical record</string>
+
+    <string name="doctor_note">Details from Doctor in True Health</string>
+    <string name="search_by_date">Search by time period</string>
+    <string name="search_by_doctor">Search by doctor</string>
+    <string name="appointment">Appointment</string>
+    <string name="note_doctor">Doctor’s Note from doctor</string>
+    <string name="recommended_product">Products recommend by doctor</string>
+    <string name="recommended_medication">Medicine recommend by doctor</string>
+    <string name="back_doctor_note">Back to main page of Doctor’s Note</string>
+    <string name="medication_name">Medicine name</string>
+    <string name="quantity_unit">Quantity/Unit</string>
+    <string name="how_to_eat">How to use</string>
+    <string name="product_price">Product price</string>
+    <string name="vat">VAT</string>
+    <string name="discount_price">Price reduced</string>
+    <string name="summary_price">Price summary</string>
+    <string name="drug_price">Product price</string>
+    <string name="input_discount_code">Enter discount code</string>
+
+    <string name="search_by_place">Search by location</string>
+    <string name="pregnant_history">Pregnant history</string>
+    <string name="title">Topics</string>
+    <string name="date_survey">Diagnose date</string>
+    <string name="pregnant_place">location pregnancy check</string>
+    <string name="explain">Description</string>
+    <string name="new_pregnant_history_default_name"> Pregnant history # </string>
+    <string name="new_pregnant_history">Add pregnant history</string>
+    <string name="update_pregnant_history">Edit pregnant history</string>
+    <string name="new_pregnant_history_success">Add pregnant history successfully</string>
+    <string name="update_pregnant_history_success">Edit pregnant history successfully</string>
+
+    <string name="medication_history">Medication history</string>
+    <string name="new_medication_history">Add medication history</string>
+    <string name="update_medication_history">Edit medication history</string>
+    <string name="new_medication_history_success">Add medication history successfully</string>
+    <string name="update_medication_history_success">Edit medication history successfully</string>
+    <string name="name_dispense_place">Dispensator/buy medicine at</string>
+    <string name="medication_from_chiiwii_live">Medicine from Chiiwii</string>
+    <string name="name_doctor_recommended_medication">Doctor who recommend medicine</string>
+    <string name="back_medication_history">Back to medication history</string>
+
+    <string name="vaccination_history">Vaccination History</string>
+    <string name="vaccination_necessary">Necessary vaccines</string>
+    <string name="vaccination_other">Other vaccines</string>
+    <string name="vaccination_detail">Vaccine Description</string>
+
+    <string name="laboratory">Laboratory test</string>
+    <string name="laboratory_chiiwii">Chiiwii Lab</string>
+    <string name="laboratory_other">Other Lab</string>
+    <string name="new_laboratory">Add test results from the laboratory</string>
+    <string name="update_laboratory">Edit test results from the laboratory</string>
+    <string name="new_laboratory_success">Add test result from the laboratory successfully</string>
+    <string name="update_laboratory_success">Edit test result from the laboratory successfully</string>
+    <string name="name_inspector_place">Doctor name/diagnose place</string>
+
+    <string name="menstrual_period">Menstrual History</string>
+
+    <string name="child_growth">Child Growth History</string>
+
+    <string name="day">Daily</string>
+    <string name="week">Weekly</string>
+    <string name="month">Monthly</string>
+    <string name="today">Today</string>
+    <string name="bpm">BPM</string>
+    <string name="view_more">View all</string>
+    <string name="data_not_found">Data not found</string>
+    <string name="max">MAX</string>
+    <string name="min">MIN</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="delete">Delete record</string>
+
+    <string name="heart_beat_rate">Heart Rate</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="resting_rate">Resting Rate</string>
+    <string name="heart_beat_rate_data">Heart rate information</string>
+    <string name="new_heart_beat_rate">Add heart rate</string>
+    <string name="update_heart_beat_rate">Edit heart rate</string>
+    <string name="new_heart_beat_rate_success">Add heart rate successfully</string>
+    <string name="update_heart_beat_rate_success">Edit heart rate successfully</string>
+    <string name="delete_heart_beat_rate_success">Delete hear rate successfully</string>
+    <string name="type">Type</string>
+
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="mmhg">mmHg</string>
+    <string name="sys">SYS</string>
+    <string name="dia">DIA</string>
+    <string name="blood_pressure_data">Blood pressure information</string>
+    <string name="new_blood_pressure">Add blood pressure</string>
+    <string name="update_blood_pressure">Edit blood pressure</string>
+    <string name="new_blood_pressure_success">Add blood pressure successfully</string>
+    <string name="update_blood_pressure_success">Edit blood pressure successfully</string>
+    <string name="delete_blood_pressure_success">Delete blood pressure successfully</string>
+
+    <string name="blood_sugar">Blood sugar</string>
+    <string name="blood_glucose">Blood Glucose</string>
+    <string name="mg_dl">mg/dL</string>
+    <string name="blood_sugar_data">Blood sugar information</string>
+    <string name="new_blood_sugar">Add blood sugar</string>
+    <string name="update_blood_sugar">Edit blood sugar</string>
+    <string name="new_blood_sugar_success">Add blood sugar successfully</string>
+    <string name="update_blood_sugar_success">Edit blood sugar successfully</string>
+    <string name="delete_blood_sugar_success">Delete blood sugar successfully</string>
+
+    <string name="medicine_allergy">History of medicine allergy</string>
+    <string name="new_medicine_allergy">Add history of medicine allergy</string>
+    <string name="update_medicine_allergy">Edit history of medicine allergy</string>
+    <string name="new_medicine_allergy_success">Add history of medicine allergy successfully</string>
+    <string name="update_medicine_allergy_success">Edit history of medicine allergy successfully</string>
+
+    <string name="food_allergy">History of food allergy</string>
+    <string name="new_food_allergy">Add history of food allergy</string>
+    <string name="update_food_allergy">Edit history of food allergy</string>
+    <string name="new_food_allergy_success">Add history of food allergy successfully</string>
+    <string name="update_food_allergy_success">Edit history of food allergy successfully</string>
+
+    <string name="congenital_disease">History of congenital disease</string>
+    <string name="new_congenital_disease">Add history of congenital disease</string>
+    <string name="update_congenital_disease">Edit history of congenital disease</string>
+    <string name="new_congenital_disease_success">Add history of congenital disease successfully</string>
+    <string name="update_congenital_disease_success">Edit history of congenital disease successfully</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">This app needs access to the location service is required to enable the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This app needs access to the location service is required to enable the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="permission_required_toast">Location permission is required for this app</string>
+    <string name="payment_available_for">Payment Available for</string>
+    <string name="patient_registration">Patient Registration</string>
+    <string name="insurance_setting">Insurance Setting</string>
+    <string name="payment_setting">PAYMENT SETTING</string>
+    <string name="add_insurance">Add Insurance…</string>
+    <string name="edit_insurance">EDIT INSURANCE</string>
+    <string name="name">Name:</string>
+    <string name="citizen_id">Citizen ID:</string>
+    <string name="display_citizen_id">Display Citizen ID…</string>
+    <string name="insurance_no">Insurance No. :</string>
+    <string name="display_insurance_no">Display Insurance No. :</string>
+    <string name="date_of_birth">Date of Birth:</string>
+    <string name="display_date_of_birth">Display Date of Birth:</string>
+    <string name="set_default">Set Default</string>
+    <string name="back"><u>Back</u></string>
+    <string name="delete_insurance"><u>Delete Insurance</u></string>
+
+
+</resources>

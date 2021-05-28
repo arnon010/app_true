@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_normal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center">
+        <!--
+        <include layout="@layout/item_image_upload"/>
+        -->
+
+        <ImageView
+            android:id="@+id/image_upload_article"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_image_upload"/>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="1dp"/>
+
+        <ImageView
+            android:id="@+id/image_upload_clip"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_image_upload_clip"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_title"
+        style="@style/TextStyle.EditText.Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:hint="@string/article_doctor_detail_title"
+        android:imeOptions="actionNext"/>
+
+
+
+        <EditText
+            android:id="@+id/edit_detail"
+            style="@style/TextStyle.EditText.Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="120dp"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:gravity="left"
+            android:hint="@string/article_doctor_detail_description"
+            android:imeOptions="actionNext"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_articles_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="@drawable/bg_rounded_gray"
+        android:padding="@dimen/padding_normal"
+        android:layout_marginTop="@dimen/margin_normal">
+
+        <TextView
+            android:id="@+id/tv_category"
+            style="@style/TextStyle.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_blue"
+            android:gravity="center"
+            android:text="@string/article_doctor_detail_category"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:tint="@color/color_blue"
+            app:srcCompat="@drawable/ic_arrow_up"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/Button.Primary.Green"
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:text="@string/button_confirm"/>
+    </LinearLayout>
+
+</LinearLayout>

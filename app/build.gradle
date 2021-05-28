@@ -1,0 +1,255 @@
+plugins {
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin' version '0.12.6'
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'realm-android'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    signingConfigs {
+    }
+    compileSdkVersion 29
+    ndkVersion '21.3.6528147'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ndk {
+                debugSymbolLevel 'FULL'
+            }
+        }
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        Production {
+            minSdkVersion 21
+            targetSdkVersion 29
+            versionCode 35
+            versionName "1.2.5"
+
+            buildConfigField "String", "USER_TYPE", '"PATIENT"'
+
+            buildConfigField "String", "SERVER_AUTHEN", '"https://api.chiiwiilive.com/WebAuthenV2_true/"'
+            buildConfigField "String", "SERVER_BASE", '"https://api.chiiwiilive.com/webserviceV2_true/api/"'
+            buildConfigField "String", "SERVER_BASE_INFO", '"https://api.chiiwiilive.com/webserviceV2_true/"'
+
+            buildConfigField "String", "SERVER_ONE_SIGNAL", '"https://onesignal.com/api/v1/"'
+            buildConfigField "String", "MERCHANT_ID_2C2P", '"764764000000430"'
+            buildConfigField "String", "SECRET_KEY_2C2P", '"HwiwsZkgPD2e"'
+            buildConfigField "String", "API_KEY_TOKBOX", '"45877362"'
+            buildConfigField "boolean", "PRODUCTION_MODE", 'true'
+
+            buildConfigField "String", "APPLICATION_URL", '"https://play.google.com/store/apps/details?id=com.truedigital.vhealth"';
+            buildConfigField "String", "APPLICATION_URL_PROVIDER", '"https://play.google.com/store/apps/details?id=com.chiiwii.provider"';
+
+            buildConfigField "String", "FILE_PROVIDER", '"com.truedigital.vhealth.fileprovider"'
+            resValue "string", "FILE_PROVIDER", "com.truedigital.vhealth.fileprovider"
+            applicationId 'com.truedigital.vhealth'
+            resValue "string", "app_name_chiiwii", "True Health"
+
+            buildConfigField "String", "private_key_2c2p", '"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"'
+            resValue "string", "facebook_app_id", "1023049748126379"
+
+            renderscriptSupportModeEnabled true
+            testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+            multiDexEnabled true
+
+            manifestPlaceholders = [onesignal_app_id               : "141c97b4-c88b-474b-880b-412cd0889d47",
+                                    // Project number pulled from dashboard, local value is ignored.
+                                    onesignal_google_project_number: "359847385273"]
+
+            buildConfigField "String", "TWILIO_ACCESS_TOKEN", '""'
+            buildConfigField "String", "TWILIO_ACCESS_TOKEN_SERVER", '"http://128.199.137.145:3001/tokens/video?name=Jenny"'
+            buildConfigField "boolean", "USE_TOKEN_SERVER", 'true'
+
+            //..Intercom
+            buildConfigField "String", "APPID_INTERCOM", '"wgrdbth3"'
+            buildConfigField "String", "APIKEY_INTERCOM", '"android_sdk-0a738a11d9177fc66b281d58883ad4fcd19763b1"'
+
+            //..Omise payment
+            buildConfigField "String", "OMISE_PKEY", '"pkey_5ee90spo3kw2ijxlh8i"'
+
+            // Line Account
+            buildConfigField "String", "LINE_SOCIAL_ACCOUNT", '"https://lin.ee/l0EXnfq"'
+        }
+        Develop {
+            dimension "default"
+            minSdkVersion 21
+            targetSdkVersion 29
+            versionCode 23
+            versionName "Beta 1.2.6"
+
+            buildConfigField "String", "USER_TYPE", '"PATIENT"'
+
+            buildConfigField "String", "SERVER_AUTHEN", '"https://api.chiiwiilive.com/WebAuthenV2_true/"'
+            buildConfigField "String", "SERVER_BASE", '"https://api.chiiwiilive.com/webserviceV2_true/api/"'
+            buildConfigField "String", "SERVER_BASE_INFO", '"https://api.chiiwiilive.com/webserviceV2_true/"'
+
+            buildConfigField "String", "SERVER_ONE_SIGNAL", '"https://onesignal.com/api/v1/"'
+            buildConfigField "String", "MERCHANT_ID_2C2P", '"764764000000430"'
+            buildConfigField "String", "SECRET_KEY_2C2P", '"dRJbpO3iVybU"'
+            buildConfigField "String", "API_KEY_TOKBOX", '"45701952"'
+            buildConfigField "boolean", "PRODUCTION_MODE", 'false'
+            buildConfigField "String", "APPLICATION_URL", '"https://play.google.com/apps/internaltest/4700498882639954867"';
+            buildConfigField "String", "APPLICATION_URL_PROVIDER", '"https://play.google.com/apps/internaltest/4697652839323870992"';
+
+            buildConfigField "String", "FILE_PROVIDER", '"com.truedigital.vhealth.fileprovider"'
+            resValue "string", "FILE_PROVIDER", "com.truedigital.vhealth.fileprovider"
+            applicationId 'com.truedigital.vhealth'
+            resValue "string", "app_name_chiiwii", "True Health"
+
+            buildConfigField "String", "private_key_2c2p", '"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"'
+            resValue "string", "facebook_app_id", "1023049748126379"
+
+            renderscriptSupportModeEnabled true
+            testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+            multiDexEnabled true
+
+            manifestPlaceholders = [onesignal_app_id               : "0fa440ad-f4fd-4531-9111-af3e15808934",
+                                    // Project number pulled from dashboard, local value is ignored.
+                                    onesignal_google_project_number: "359847385273"]
+
+            buildConfigField "String", "TWILIO_ACCESS_TOKEN", '""'
+            buildConfigField "String", "TWILIO_ACCESS_TOKEN_SERVER", '"http://128.199.137.145:3001/tokens/video?name=Jenny"'
+            buildConfigField "boolean", "USE_TOKEN_SERVER", 'true'
+
+            //..Intercom
+            buildConfigField "String", "APPID_INTERCOM", '"wgrdbth3"'
+            buildConfigField "String", "APIKEY_INTERCOM", '"android_sdk-0a738a11d9177fc66b281d58883ad4fcd19763b1"'
+
+            //..Omise payment
+            buildConfigField "String", "OMISE_PKEY", '"pkey_test_5m5oi9pqu6spzyf313q"'
+
+            // Line Account
+            buildConfigField "String", "LINE_SOCIAL_ACCOUNT", '"https://lin.ee/l0EXnfq"'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        //exclude 'AndroidManifest.xml'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-preference-v14:1.0.0'
+    implementation 'androidx.core:core:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.3.1'
+
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.caverock:androidsvg:1.4'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'me.relex:circleindicator:1.2.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+
+
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'com.orhanobut:logger:1.15'
+
+    implementation 'com.facebook.android:facebook-android-sdk:5.13.0'
+    //
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation('com.onesignal:OneSignal:3.13.0') {
+        exclude group: 'com.google.android.gms'
+        exclude group: 'com.google.firebase'
+    }
+
+    //..Onesignal request
+    implementation "com.google.android.gms:play-services-gcm:${gmsLibVersion}"
+
+    implementation "com.google.android.gms:play-services-maps:${gmsLibVersion}"
+    implementation "com.google.android.gms:play-services-location:17.1.0"
+    implementation 'com.google.firebase:firebase-messaging:21.0.0'
+
+
+    implementation "com.google.firebase:firebase-crashlytics:${firebaseLibVersion}"
+    implementation "com.google.firebase:firebase-analytics:${firebaseLibVersion}"
+
+    //implementation "com.google.android.gms:play-services-ads-identifier:${firebaseLibVersion}"
+    //implementation 'uk.co.chrisjenx:calligraphy:2.2.0'
+
+    //..for chat
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.0.pr3'
+
+    //https://github.com/google/flexbox-layout
+    implementation 'com.google.android:flexbox:2.0.1'
+
+    //..tokbox
+    implementation 'com.opentok.android:opentok-android-sdk:2.16.6'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+
+    //..https://github.com/sayyam/carouselview
+    implementation 'com.synnapps:carouselview:0.1.6'
+    implementation 'com.github.jama5262:CarouselView:1.1.0'
+
+    //https://github.com/cachapa/ExpandableLayout
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+
+    //https://github.com/PhilJay/MPAndroidChart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    //https://github.com/jsibbold/zoomage
+    implementation 'com.jsibbold:zoomage:1.2.0-SNAPSHOT'
+
+    //..
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //..omise
+    implementation 'co.omise:omise-android:2.6.5'
+
+    //..intercom
+    implementation 'io.intercom.android:intercom-sdk-base:6.1.0'
+
+    //..Localization
+    implementation 'com.akexorcist:localizationactivity:1.2.2'
+
+    implementation "com.orhanobut:hawk:2.0.1"
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    implementation "android.arch.lifecycle:extensions:1.1.0"
+    implementation "android.arch.lifecycle:viewmodel:1.1.0"
+
+    // Log
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    // Permission
+    implementation 'com.karumi:dexter:6.2.2'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

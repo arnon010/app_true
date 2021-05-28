@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imageviewIcon"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+                <ImageView
+                    android:id="@+id/imgRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_refresh"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/textviewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/padding_small"
+                    android:text="00:00"
+                    android:textColor="@color/color_blue"
+                    android:textSize="@dimen/text_mini" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_mini">
+
+                <ImageView
+                    android:id="@+id/imageviewAttachImage"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    />
+                <ImageView
+                    android:id="@+id/imageFailbg"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/ic_fail_bg"
+                    />
+                <ImageView
+                    android:id="@+id/imageUploadFail"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_fail"
+                    android:visibility="visible"
+                    />
+                <TextView
+                    android:id="@+id/textviewMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_box_background"
+                    android:padding="@dimen/padding_small"
+                    android:textSize="@dimen/text_small" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/progress"
+                    android:layout_height="@dimen/progress"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/pgLoading"
+                    android:layout_width="180dp"
+                    android:layout_height="20dp"
+                    android:scaleY="8"
+                    style="?android:attr/progressBarStyleHorizontal"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignBaseline="@id/imageviewAttachImage"
+                    android:visibility="invisible"
+                    android:layout_marginRight="@dimen/padding_normal"
+                    />
+
+                <TextView
+                    android:id="@+id/tvLoadingPercent"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_normal"
+                    android:text="0%"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignBaseline="@id/imageviewAttachImage"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageviewIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_iph_defaultimg2x" />
+
+    </RelativeLayout>
+
+</LinearLayout>

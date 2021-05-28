@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_normal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextStyle.Title.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shipping_title_invoice"/>
+
+        <TextView
+            style="@style/TextStyle.Title.Tag"
+            android:id="@+id/tvInvoiceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/shipping_title_invoice"/>
+
+        <TextView
+            style="@style/TextStyle.Title.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/shipping_title_staus"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/TextStyle.Title.Tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/shipping_title_staus"/>
+
+        <TextView
+            style="@style/ehr_TextStyle.Title.Red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/shipping_title_remark"/>
+
+    </LinearLayout>
+
+    <Button
+        style="@style/Button.Primary.Green"
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="@string/shipping_button"/>
+
+</LinearLayout>
+

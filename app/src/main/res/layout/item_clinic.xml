@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="@dimen/height_super_large"
+    android:layout_height="@dimen/height_super_large"
+    android:layout_gravity="center"
+    android:padding="@dimen/margin_small"
+    android:background="@drawable/selector_item_circle">
+
+
+    <RelativeLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/image_label"
+        android:layout_height="@dimen/image_label"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/card_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/new1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            style="@style/TextStyle.Title.Sub"
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/symptom_title"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/color_green"/>
+
+        <TextView
+            android:visibility="gone"
+            style="@style/TextStyle.Title.Sub"
+            android:id="@+id/card_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/app_name_chiiwii"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/color_black"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="appbar_padding_top">16dp</dimen>
+
+    <dimen name="toolbar_height">55dp</dimen>
+    <dimen name="ratingbar_big_height">60dp</dimen>
+    <dimen name="image_top_bar_height">40dp</dimen>
+
+    <dimen name="corner_mini">3dp</dimen>
+    <dimen name="category_round">10dp</dimen>
+    <dimen name="min_width_button">180dp</dimen>
+    <dimen name="min_width_day_of_week">80dp</dimen>
+    <dimen name="min_height_edittext">110dp</dimen>
+    <dimen name="min_height_edittext_small">80dp</dimen>
+    <dimen name="min_height_search_list">150dp</dimen>
+
+    <dimen name="circle_indicator_width">8dp</dimen>
+    <dimen name="circle_indicator_height">8dp</dimen>
+
+    <dimen name="profile_circle_size">80dp</dimen>
+    <dimen name="profile_detail_high_size">300dp</dimen>
+    <dimen name="profile_icon_favorite">32dp</dimen>
+    <dimen name="preview_image_attach">30dp</dimen>
+    <dimen name="icon_contact">30dp</dimen>
+    <dimen name="icon_language">30dp</dimen>
+    <dimen name="icon_favorite">48dp</dimen>
+    <dimen name="icon_favorite_margin">-24dp</dimen>
+
+    <dimen name="padding_mini">5dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_normal">15dp</dimen>
+    <dimen name="padding_medium">20dp</dimen>
+    <dimen name="padding_large">25dp</dimen>
+    <dimen name="padding_xlarge">30dp</dimen>
+    <dimen name="padding_xxlarge">35dp</dimen>
+    <dimen name="padding_xxxlarge">40dp</dimen>
+
+    <dimen name="margin_mini">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_normal">15dp</dimen>
+    <dimen name="margin_medium">20dp</dimen>
+    <dimen name="margin_large">25dp</dimen>
+    <dimen name="margin_xlarge">30dp</dimen>
+    <dimen name="margin_xxlarge">35dp</dimen>
+    <dimen name="margin_xxxlarge">40dp</dimen>
+
+    <dimen name="height_mini">30dp</dimen>
+    <dimen name="height_small">35dp</dimen>
+    <dimen name="height_normal">40dp</dimen>
+    <dimen name="height_medium">45dp</dimen>
+    <dimen name="height_large">50dp</dimen>
+    <dimen name="height_xlarge">55dp</dimen>
+    <dimen name="height_xxlarge">60dp</dimen>
+    <dimen name="height_xxxlarge">65dp</dimen>
+    <dimen name="height_super_large">100dp</dimen>
+
+    <dimen name="text_nmini">7pt</dimen>
+    <dimen name="text_mini">8pt</dimen>
+    <dimen name="text_small">9pt</dimen>
+    <dimen name="text_normal">10pt</dimen>
+    <dimen name="text_large">11pt</dimen>
+    <dimen name="text_xlarge">12pt</dimen>
+    <dimen name="text_2xlarge">13pt</dimen>
+    <dimen name="text_3xlarge">16pt</dimen>
+    <dimen name="text_4xlarge">18pt</dimen>
+    <dimen name="text_5xlarge">20pt</dimen>
+    <dimen name="text_6xlarge">22pt</dimen>
+    <dimen name="text_7xlarge">24pt</dimen>
+    <dimen name="text_8xlarge">26pt</dimen>
+
+    <dimen name="text_size_mini">8pt</dimen>
+    <dimen name="text_size_small">9pt</dimen>
+    <dimen name="text_size_normal">10pt</dimen>
+    <dimen name="text_size_large">11pt</dimen>
+    <dimen name="text_size_xlarge">14pt</dimen>
+    <dimen name="text_size_promptpay_amount">18pt</dimen>
+
+    <dimen name="text_size_header">11pt</dimen>
+    <dimen name="text_size_header_large">12pt</dimen>
+    <dimen name="text_size_edit">12pt</dimen>
+    <dimen name="text_size_button">11pt</dimen>
+
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="card_height">304dp</dimen>
+    <dimen name="md_keylines">16dp</dimen>
+    <dimen name="tile_padding">8dp</dimen>
+    <dimen name="tile_height">160dp</dimen>
+
+    <dimen name="app_bar_height_big2">256dp</dimen>
+    <dimen name="app_bar_height_big">300dp</dimen>
+    <dimen name="app_bar_height">56dp</dimen>
+    <dimen name="app_bar_height_medium">140dp</dimen>
+    <dimen name="app_bar_height_small">120dp</dimen>
+
+    <dimen name="article_keylines">72dp</dimen>
+    <dimen name="avator_size">40dp</dimen>
+    <dimen name="card_title_height">40dp</dimen>
+    <dimen name="article_titles">@dimen/text_xlarge</dimen>
+
+    <dimen name="cards_button_width">32dp</dimen>
+    <dimen name="cards_button_height">32dp</dimen>
+
+    <dimen name="setting_button_confirm">72dp</dimen>
+
+    <dimen name="article_subheading">@dimen/text_normal</dimen>
+    <dimen name="card_image_height">200dp</dimen>
+    <dimen name="list_body">@dimen/text_small</dimen>
+    <dimen name="navheader_height">222dp</dimen>
+
+    <dimen name="login_form_top_margin">150dp</dimen>
+
+    <dimen name="fab_call_center">56dp</dimen>
+
+    <dimen name="navigation_bottom_view">48dp</dimen>
+    <dimen name="ic_botttom">24dp</dimen>
+
+    <dimen name="progress">48dp</dimen>
+
+    <dimen name="image_category">96dp</dimen>
+    <dimen name="image_back">32dp</dimen>
+    <dimen name="image_toolbar">60dp</dimen>
+    <dimen name="image_splash">150dp</dimen>
+    <dimen name="image_channel">48dp</dimen>
+    <dimen name="image_label">48dp</dimen>
+    <dimen name="image_default">32dp</dimen>
+    <dimen name="image_in_video">72dp</dimen>
+    <dimen name="image_in_video_large">88dp</dimen>
+    <dimen name="image_featured">180dp</dimen>
+    <dimen name="image_clinic">88dp</dimen>
+    <dimen name="image_tutorial">300dp</dimen>
+    <dimen name="image_ehr">25dp</dimen>
+    <dimen name="image_promptpay">40dp</dimen>
+    <dimen name="image_qrcode">300dp</dimen>
+    <dimen name="image_check_status">60dp</dimen>
+    <dimen name="image_checked">24dp</dimen>
+
+    <dimen name="pager_healthcare">90dp</dimen>
+    <dimen name="pager_doctor">225dp</dimen>
+
+</resources>

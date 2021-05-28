@@ -1,0 +1,37 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_normal">
+
+            <include layout="@layout/list_item_doctor_info" />
+
+            <com.truedigital.vhealth.ui.view.ViewAppointmentInfo
+                android:id="@+id/view_appoint_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium">
+
+            </com.truedigital.vhealth.ui.view.ViewAppointmentInfo>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

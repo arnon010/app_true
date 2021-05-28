@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_nav_home"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_heart"
+        android:icon="@drawable/ic_nav_ehr"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_time"
+        android:icon="@drawable/ic_nav_appointment"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/ic_nav_menu"
+        android:title="" />
+
+
+</menu>

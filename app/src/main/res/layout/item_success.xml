@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    style="@style/Button.Primary.Green"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:padding="@dimen/padding_mini"
+    android:orientation="vertical"
+    android:backgroundTint="@color/color_green"
+    android:background="@drawable/rounded_toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <ImageView
+            style="@style/TextStyle.Title.Reverse"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/color_white"
+            android:src="@drawable/ic_checkbox_select"/>
+
+        <TextView
+            style="@style/TextStyle.Heading"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:text="@string/appointment_success_save"
+            android:textColor="@color/color_white"/>
+    </LinearLayout>
+</LinearLayout>

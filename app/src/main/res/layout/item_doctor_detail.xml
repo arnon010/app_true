@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp"
+                    android:background="@drawable/rounded_toolbar">
+                    <ImageView
+                        android:id="@+id/imgProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="@dimen/profile_detail_high_size"
+                        android:src="@drawable/ic_profile_user" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/imgFavorite"
+                    android:layout_width="@dimen/icon_favorite"
+                    android:layout_height="@dimen/icon_favorite"
+                    android:layout_marginTop="@dimen/icon_favorite_margin"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_favorite_green"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_normal"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/list_item_doctor_info"/>
+                    <include
+                        android:id="@+id/doctor_specialist"
+                        layout="@layout/list_item_title"
+                        />
+
+                    <include
+                        android:id="@+id/doctor_education"
+                        layout="@layout/list_item_title"
+                        />
+
+                    <include
+                        android:id="@+id/doctor_career_history"
+                        layout="@layout/list_item_title"
+                        />
+
+                <Button
+                    style="@style/Button.Primary.Green"
+                    android:id="@+id/btn_appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_normal"
+                    android:paddingRight="@dimen/padding_normal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/doctor_detail_button_appointment"/>
+                </LinearLayout>
+
+            </LinearLayout>
+</LinearLayout>

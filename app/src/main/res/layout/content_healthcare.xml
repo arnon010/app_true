@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.jama.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:carouselOffset="start"
+        app:resource="@layout/image_carousel_item_healthcare"
+        app:scaleOnScroll="false"
+        app:setAutoPlay="false"
+        app:size="10"
+        app:spacing="24" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progress"
+        android:layout_height="@dimen/progress"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/padding_normal"
+        android:visibility="visible" />
+
+</RelativeLayout>

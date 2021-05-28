@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:gravity="center"
+        android:text="@string/bank_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_normal">
+        <include layout="@layout/item_bank_detail"/>
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:gravity="center"
+        android:text="@string/bank_tranfer_title_attach"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:orientation="horizontal">
+        <EditText
+            style="@style/TextStyle.EditText.Green"
+            android:id="@+id/edit_payment_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="16"
+            android:inputType="text"
+            android:hint="@string/appointment_confirm_payment_code_hint"/>
+        <Button
+            android:visibility="gone"
+            style="@style/Button.Primary.Green"
+            android:id="@+id/btn_payment_code_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/appointment_confirm_button"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="@dimen/margin_normal"
+        android:gravity="center"
+        android:background="@drawable/rounded_over_shape_white_border_green">
+        <ImageView
+            android:id="@+id/imgAttach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tvAttachFile"
+            style="@style/TextStyle.Heading.Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/bank_tranfer_button_attach"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:visibility="gone"
+        style="@style/Button.Primary.Green"
+        android:id="@+id/btn_attach_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="@string/bank_tranfer_button_attach"/>
+
+</LinearLayout>

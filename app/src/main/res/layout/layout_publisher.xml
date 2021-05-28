@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.truedigital.vhealth.custom.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/publisherview"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/imageviewPublisherProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_iph_defaultimg2x" />
+    </RelativeLayout>
+</com.truedigital.vhealth.custom.BubbleLayout>

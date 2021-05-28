@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="com.truedigital.vhealth.ui.meeting.voice.VoiceCallActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutFrame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_normal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_dialog"
+                    android:padding="@dimen/padding_small">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/TextStyle.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:text="@string/name_hint"
+                        android:textColor="@color/color_white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal">
+
+                    <TextView
+                        android:id="@+id/tv_timeleft"
+                        style="@style/TextStyle.Title.White"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/color_gray_text"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/padding_medium"
+                        android:paddingRight="@dimen/padding_medium"
+                        android:text="00:00:00" />
+
+                    <ImageView
+                        android:id="@+id/imageEhr"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_ehr_blue_24dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativelayoutSubscriber"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="@dimen/margin_normal"
+                    android:background="@color/color_black_transparent">
+
+                    <ImageView
+                        android:id="@+id/imageviewSubscriber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_iph_defaultimg_white_big2x" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgSwapCamera"
+                    android:layout_width="@dimen/image_in_video"
+                    android:layout_height="@dimen/image_in_video"
+                    android:padding="@dimen/padding_small"
+                    android:src="@drawable/selector_swap_camera"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/imgStopCall"
+                    android:layout_width="@dimen/image_in_video"
+                    android:layout_height="@dimen/image_in_video"
+                    android:padding="@dimen/padding_small"
+                    android:src="@drawable/selector_phone" />
+
+                <ImageView
+                    android:id="@+id/imgMicrophone"
+                    android:layout_width="@dimen/image_in_video"
+                    android:layout_height="@dimen/image_in_video"
+                    android:padding="@dimen/padding_small"
+                    android:src="@drawable/selector_microphone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

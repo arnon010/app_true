@@ -1,0 +1,42 @@
+buildscript {
+
+    ext.kotlin_version = '1.4.21'
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath "io.realm:realm-gradle-plugin:4.3.3"
+        classpath 'com.google.gms:google-services:4.3.4'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.4.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "http://tokbox.bintray.com/maven" }
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        maven { url 'https://oss.jfrog.org/artifactory/oss-snapshot-local' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
+ext {
+    supportLibVersion = '28.0.0'  // variable that can be referenced to keep support libs consistent
+    gmsLibVersion = '17.0.0'
+    firebaseLibVersion = '17.3.0'
+}
+

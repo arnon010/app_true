@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ic_bank"
+            android:layout_width="@dimen/image_default"
+            android:layout_height="@dimen/image_default"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_bank_kbank"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextStyle.Title.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_toLeftOf="@id/tv_account"
+            android:layout_toRightOf="@id/ic_bank"
+            android:text="@string/bank_kbank_name" />
+
+        <TextView
+            style="@style/TextStyle.Title.Green"
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/bank_kbank_account" />
+
+    </RelativeLayout>
+</LinearLayout>

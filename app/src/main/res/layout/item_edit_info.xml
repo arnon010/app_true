@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextStyle.Heading.Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/appointment_create_title"/>
+
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="@string/appointment_create_title2"/>
+    <EditText
+        style="@style/TextStyle.EditText.Green"
+        android:id="@+id/edSymptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:minHeight="80dp"
+        android:maxLines="8"
+        android:inputType="textMultiLine"
+        android:hint="@string/appointment_create_title2_hint" />
+
+    <!--
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="@string/appointment_create_title3"/>
+        -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_anti_medicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:count="1"
+        tools:item="@layout/list_item_anti_medicine"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small">
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_add" />
+    </RelativeLayout>
+
+    <EditText
+        android:visibility="gone"
+        style="@style/TextStyle.EditText.Green"
+        android:id="@+id/edMedicine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small"
+        android:gravity="right">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_add"/>
+    </LinearLayout>
+    -->
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="@string/appointment_create_email"/>
+    <EditText
+        style="@style/TextStyle.EditText.Green"
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="@string/appointment_create_phone"/>
+    <EditText
+        style="@style/TextStyle.EditText.Green"
+        android:id="@+id/edTelephone"
+        android:hint="@string/login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:src="@drawable/selector_button_checkbox"/>
+
+        <TextView
+            style="@style/TextStyle.Title"
+            android:id="@+id/tv_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:text="@string/appointment_create_condition"/>
+    </LinearLayout>
+
+</LinearLayout>

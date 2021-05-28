@@ -1,0 +1,68 @@
+{
+  "IsSuccess": true,
+  "ErrorMessages": [],
+  "Data": [
+    {
+      "Id": 1,
+      "Description": "เด็ก",
+      "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "IsShow": true,
+      "Active": true
+    },
+    {
+      "Id": 2,
+      "Description": "สุขภาพผู้หญิงเวชศาตร์ชะลอวัย",
+      "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "IsShow": true,
+      "Active": true
+    },    {
+      "Id": 3,
+      "Description": "ผิวหนัง",
+      "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "IsShow": true,
+      "Active": true
+    },
+    {
+      "Id": 4,
+      "Description": "เวชศาตร์ชะลอวัย",
+      "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "IsShow": true,
+      "Active": true
+    },
+    {
+      "Id": 5,
+      "Description": "กระดูกและข้อ",
+      "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "IsShow": true,
+      "Active": true
+    },    {
+      "Id": 6,
+      "Description": "อายุรกรรม",
+      "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "IsShow": true,
+      "Active": true
+    },
+    {
+      "Id": 7,
+      "Description": "ตรวจสุขภาพ",
+      "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "IsShow": true,
+      "Active": true
+    },
+    {
+      "Id": 8,
+      "Description": "เภสัชกรรม",
+      "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "IsShow": true,
+      "Active": true
+    },
+    {
+      "Id": 9,
+      "Description": "อื่นๆ",
+      "LogoImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "IsShow": true,
+      "Active": true
+    }
+
+  ]
+}

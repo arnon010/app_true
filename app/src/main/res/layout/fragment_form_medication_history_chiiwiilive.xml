@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <TextView
+                style="@style/ehr_TextStyle.Title.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/medication_name" />
+
+            <EditText
+                android:id="@+id/edtDrugName"
+                style="@style/ehr_EditTextStyle.BorderGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start"
+                android:hint="@string/medication_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nestedScrollingEnabled="false"
+                android:scrollHorizontally="true" />
+
+
+            <TextView
+                style="@style/ehr_TextStyle.Title.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quantity_unit" />
+
+            <EditText
+                android:id="@+id/edtUnit"
+                style="@style/ehr_EditTextStyle.BorderGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start"
+                android:hint="@string/quantity_unit"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nestedScrollingEnabled="false"
+                android:scrollHorizontally="true" />
+
+
+            <TextView
+                style="@style/ehr_TextStyle.Title.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_eat" />
+
+            <EditText
+                android:id="@+id/edtHowTo"
+                style="@style/ehr_EditTextStyle.BorderGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start"
+                android:hint="@string/how_to_eat"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nestedScrollingEnabled="false"
+                android:scrollHorizontally="true" />
+
+            <TextView
+                style="@style/ehr_TextStyle.Title.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_doctor_recommended_medication" />
+
+            <EditText
+                android:id="@+id/edtFromName"
+                style="@style/ehr_EditTextStyle.BorderGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start"
+                android:hint="@string/name_doctor_recommended_medication"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nestedScrollingEnabled="false"
+                android:scrollHorizontally="true" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" />
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/Button.Primary.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:paddingTop="@dimen/padding_normal"
+                android:text="@string/back_medication_history" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium">
+
+            <TextView
+                style="@style/ehr_TextStyle.Title.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title" />
+
+            <EditText
+                android:id="@+id/edtTitle"
+                style="@style/ehr_EditTextStyle.BorderGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:hint="@string/title_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nestedScrollingEnabled="false"
+                android:scrollHorizontally="true" />
+
+
+            <TextView
+                style="@style/ehr_TextStyle.Title.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_survey" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtDate"
+                    style="@style/ehr_EditTextStyle.BorderGreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="start"
+                    android:hint="@string/date_survey_hint"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollHorizontally="true" />
+
+                <ImageView
+                    style="@style/TextStyle.Title.Reverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_action_expand_more"
+                    android:tint="@color/color_green_reverse" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/ehr_TextStyle.Title.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_inspector_place" />
+
+            <EditText
+                android:id="@+id/edtFromName"
+                style="@style/ehr_EditTextStyle.BorderGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:hint="@string/name_inspector_place_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nestedScrollingEnabled="false"
+                android:paddingTop="5dp"
+                android:scrollHorizontally="true" />
+
+
+            <TextView
+                style="@style/ehr_TextStyle.Title.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/explain" />
+
+            <EditText
+                android:id="@+id/edtDescription"
+                style="@style/ehr_EditTextStyle.BorderGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/explain_hint"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:nestedScrollingEnabled="false"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/Button.Primary.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:layout_marginTop="@dimen/margin_large" />
+
+            <TextView
+                android:id="@+id/btnCancel"
+                style="@style/ehr_TextStyle.Title.Gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_large"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_normal"
+                android:text="@string/button_cancel"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

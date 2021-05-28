@@ -1,0 +1,110 @@
+{
+  "IsSuccess": true,
+  "ErrorMessages": null,
+  "Data": [
+    {
+      "DoctorId": 1,
+      "Name": "นพ. สมชาย ใจดี นามสกุลชีวีบริรักษ์",
+      "Email": "iamdoctor@chiiwiidoctor.com",
+      "ProfileImage": "https://dev-api.chiiwiilive.com/WebApplication_1.0.19/Warehouse/Gallery/User/IMG_27_07_2560_d40ff94ebe8e4af9bae15e4bd8aba4ef.jpg",
+      "ClosestAvailableInMinute": 50,
+      "LanguageSkill": [
+        "TH",
+        "EN"
+      ],
+      "ContactType": [
+        {
+          "TypeCode": "CH",
+          "TypeName": "Chat"
+        },
+        {
+          "TypeCode": "VO",
+          "TypeName": "Voice"
+        }
+      ],
+      "Price": 200,
+      "ContactSizeMinutes": 15,
+      "CurrencySymbol": "THB",
+      "CategoryName": "เด็ก",
+      "PricePerMinuteFormat": "THB 200/15 นาที"
+    },
+    {
+      "DoctorId": 2,
+      "Name": "พญ.อัญชุลี ",
+      "Email": "iamdoctor@chiiwiidoctor.com",
+      "ProfileImage": "https://dev-api.chiiwiilive.com/WebApplication_1.0.19/Warehouse/Gallery/User/IMG_05_07_2560_bfe3ea6e751945b2b6b38e53f6e4c9b2.jpeg",
+      "ClosestAvailableInMinute": 50,
+      "LanguageSkill": [
+        "TH",
+        "EN"
+      ],
+      "ContactType": [
+        {
+          "TypeCode": "CH",
+          "TypeName": "Chat"
+        },
+        {
+          "TypeCode": "VO",
+          "TypeName": "Voice"
+        }
+      ],
+      "Price": 200,
+      "ContactSizeMinutes": 15,
+      "CurrencySymbol": "THB",
+      "CategoryName": "เด็ก",
+      "PricePerMinuteFormat": "THB 200/15 นาที"
+    },
+    {
+      "DoctorId": 3,
+      "Name": "นพ. สมชาย ใจดี",
+      "Email": "iamdoctor@chiiwiidoctor.com",
+      "ProfileImage": "https://dev-api.chiiwiilive.com/WebApplication_1.0.19/Warehouse/Gallery/User/IMG_06_05_2560_1a63de5d930e4d50ba5fe89bca8b76c2.jpg",
+      "ClosestAvailableInMinute": 50,
+      "LanguageSkill": [
+        "TH",
+        "EN"
+      ],
+      "ContactType": [
+        {
+          "TypeCode": "CH",
+          "TypeName": "Chat"
+        },
+        {
+          "TypeCode": "VO",
+          "TypeName": "Voice"
+        }
+      ],
+      "Price": 200,
+      "ContactSizeMinutes": 15,
+      "CurrencySymbol": "THB",
+      "CategoryName": "เด็ก",
+      "PricePerMinuteFormat": "THB 200/15 นาที"
+    },
+    {
+      "DoctorId": 4,
+      "Name": "นพ. สมชาย ใจดี",
+      "Email": "iamdoctor@chiiwiidoctor.com",
+      "ProfileImage": "http://apps.softsquaregroup.com/ChiiwiiBO/Warehouse/Gallery/chiiwii-live-logo.bak.png",
+      "ClosestAvailableInMinute": 50,
+      "LanguageSkill": [
+        "TH",
+        "EN"
+      ],
+      "ContactType": [
+        {
+          "TypeCode": "CH",
+          "TypeName": "Chat"
+        },
+        {
+          "TypeCode": "VO",
+          "TypeName": "Voice"
+        }
+      ],
+      "Price": 200,
+      "ContactSizeMinutes": 15,
+      "CurrencySymbol": "THB",
+      "CategoryName": "เด็ก",
+      "PricePerMinuteFormat": "THB 200/15 นาที"
+    }
+  ]
+}

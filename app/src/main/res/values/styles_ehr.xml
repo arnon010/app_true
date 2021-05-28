@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ehr_TextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:textColor">@color/black_effective</item>
+        <item name="android:fontFamily">@font/true_light</item>
+    </style>
+
+
+
+
+    <!--Heading-->
+    <style name="ehr_TextStyle.Heading" parent="ehr_TextStyle">
+        <item name="android:textSize">@dimen/text_size_header_large</item>
+    </style>
+
+    <style name="ehr_TextStyle.Heading.Green" parent="ehr_TextStyle.Heading">
+        <item name="android:textColor">@color/color_green</item>
+    </style>
+
+    <style name="ehr_TextStyle.Heading.White" parent="ehr_TextStyle.Heading">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+
+
+
+    <!--Title-->
+    <style name="ehr_TextStyle.Title" parent="ehr_TextStyle">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="ehr_TextStyle.Title.Green" parent="ehr_TextStyle.Title">
+        <item name="android:textColor">@color/color_green</item>
+    </style>
+
+    <style name="ehr_TextStyle.Title.White" parent="ehr_TextStyle.Title">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="ehr_TextStyle.Title.Red" parent="ehr_TextStyle.Title">
+        <item name="android:textColor">@color/color_red</item>
+    </style>
+
+    <style name="ehr_TextStyle.Title.Gray" parent="ehr_TextStyle.Title">
+        <item name="android:textColor">@color/color_gray_text</item>
+    </style>
+
+
+
+    <!--SubTitle-->
+    <style name="ehr_TextStyle.Title.Sub" parent="ehr_TextStyle.Title">
+        <item name="android:textSize">@dimen/text_size_mini</item>
+    </style>
+
+    <style name="ehr_TextStyle.SubTitle.Green" parent="ehr_TextStyle.Title.Sub">
+        <item name="android:textColor">@color/color_green</item>
+    </style>
+
+    <style name="ehr_TextStyle.SubTitle.White" parent="ehr_TextStyle.Title.Sub">
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <style name="ehr_TextStyle.SubTitle.Gray" parent="ehr_TextStyle.Title.Sub">
+        <item name="android:textColor">@color/color_gray_text</item>
+    </style>
+
+
+
+
+
+    <!--EditText-->
+    <style name="ehr_TextStyle.EditText" parent="ehr_TextStyle">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="ehr_EditTextStyle.BorderGreen" parent="ehr_TextStyle.EditText">
+        <item name="android:background">@drawable/rounded_shape_white_border_green</item>
+        <item name="android:padding">@dimen/padding_small</item>
+    </style>
+
+    <style name="ehr_EditTextStyle.Green" parent="ehr_EditTextStyle.BorderGreen">
+        <item name="android:textColor">@color/color_green</item>
+    </style>
+
+    <style name="ehr_EditTextStyle.White" parent="ehr_TextStyle.EditText">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textColorHint">@color/color_white</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@drawable/edittext_underline_selector_white</item>
+    </style>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linMain"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="85dp"
+    android:gravity="center"
+    android:background="@drawable/tag_button_select"
+    android:layout_margin="@dimen/margin_mini"
+    style="@style/Button"
+    android:paddingTop="@dimen/padding_small"
+    android:paddingBottom="@dimen/padding_small">
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="@dimen/image_ehr"
+        android:layout_height="@dimen/image_ehr"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtMenuName"
+        style="@style/ehr_TextStyle.SubTitle.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+</LinearLayout>

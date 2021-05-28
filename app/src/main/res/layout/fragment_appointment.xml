@@ -1,0 +1,208 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footerLayout"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.truedigital.vhealth.ui.home.PatientHomeFragment">
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_mini"
+            android:orientation="horizontal">
+            <RadioButton
+                style="@style/TextStyle.Title"
+                android:id="@+id/btnTemp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="@drawable/tag_button_unselect"
+                android:button="@android:color/transparent"
+                android:checked="false"
+                android:gravity="center"
+                android:layout_marginRight="8dp"
+                android:text="แผนก"
+                android:textColor="@color/color_black"
+                android:visibility="invisible"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/card_view"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="@dimen/margin_mini"
+                    android:layout_gravity="center"
+                    android:background="@drawable/selector_item_circle">
+
+                    <RelativeLayout
+                        android:id="@+id/thumbnail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/card_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/new1" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RadioButton
+                    style="@style/TextStyle.Title"
+                    android:id="@+id/btnProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:background="@drawable/tag_button_select"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:gravity="left"
+                    android:layout_marginRight="-10dp"
+                    android:text="  คุณ สมชาย ใจดี"
+                    android:textColor="@color/color_white"/>
+            </LinearLayout>
+        </LinearLayout>
+        -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_small">
+            <LinearLayout
+                android:id="@+id/switchTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_toLeftOf="@+id/switchExpand">
+                <RadioGroup
+                    android:id="@+id/radioGroupSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/TextStyle.Title.Tag.Bold"
+                        android:id="@+id/radio0"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="12dp"
+                        android:paddingStart="12dp"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:background="@drawable/tag_button_unselect"
+                        android:button="@android:color/transparent"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:text="@string/appointment_tag_time" />
+
+
+                    <RadioButton
+                        style="@style/TextStyle.Title.Tag.Bold"
+                        android:id="@+id/radio1"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="12dp"
+                        android:paddingStart="12dp"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:background="@drawable/tag_button_unselect"
+                        android:button="@android:color/transparent"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:text="@string/appointment_tag_doctor" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/switchExpand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:id="@+id/switchExpand2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:id="@+id/ivExpand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_action_expand_less"
+                        />
+                    <TextView
+                        style="@style/TextStyle.Title"
+                        android:id="@+id/tvExpand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:button="@android:color/transparent"
+                        android:text="@string/action_expand_less" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <Button
+            style="@style/Button.Primary.Green.small"
+            android:id="@+id/btn_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/margin_small"
+            android:text="@string/home_button_promotion2" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:adjustViewBounds="true"
+    android:background="@color/white"
+    tools:context=".ui.tutorial.TutorialActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/image_splash"
+            android:padding="@dimen/padding_mini"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_app_logo" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/image_tutorial"
+            android:layout_height="@dimen/image_tutorial"
+            android:padding="@dimen/padding_normal"
+            android:src="@drawable/intro_1"
+            />
+
+        <TextView
+            style="@style/TextStyle.Heading.Green"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="Get answers to all your personal health questions from Chiiwii specialists." />
+    </LinearLayout>
+
+
+</RelativeLayout>

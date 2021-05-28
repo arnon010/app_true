@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- intro -->
+    <string-array name="intro">
+        <item>Get answers to all your personal health questions from Chiiwii specialists.</item>
+        <item>Consult your preferred Chiiwii specialist at ease via VDO call, voice call and chat.</item>
+        <item>Conveniently make an appointment at your available time.</item>
+    </string-array>
+
+    <string-array name="tag_type">
+        <item>อาการ</item>
+        <item>หมอ</item>
+        <item>คลีนิค</item>
+    </string-array>
+
+    <string-array name="tag_type_doctor_note">
+        <item>ค้นหาตามช่วงเวลา</item>
+        <item>ค้นหาตามแพทย์</item>
+    </string-array>
+
+    <string-array name="tag_type_pregnant_history">
+        <item>ค้นหาตามช่วงเวลา</item>
+        <item>ค้นหาตามสถานที่</item>
+    </string-array>
+
+    <string-array name="tag_type_medication_history">
+        <item>ค้นหาตามช่วงเวลา</item>
+        <item>ค้นหาตามแพทย์</item>
+    </string-array>
+
+    <string-array name="tag_type_vaccination_history">
+        <item>วัคซีนจำเป็น</item>
+        <item>วัคซีนอื่นๆ</item>
+    </string-array>
+
+    <string-array name="tag_type_laboratory">
+        <item>ห้องแลป Chiiwii</item>
+        <item>ห้องแลปนอก</item>
+    </string-array>
+
+    <string-array name="tag_type_chart">
+        <item>รายวัน</item>
+        <item>รายสัปดาห์</item>
+        <item>รายเดือน</item>
+    </string-array>
+
+
+</resources>

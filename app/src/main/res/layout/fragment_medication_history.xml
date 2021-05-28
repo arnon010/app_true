@@ -1,0 +1,80 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.truedigital.vhealth.ui.ehr.medicationhistory.MedicationHistoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/padding_small">
+            <LinearLayout
+                android:id="@+id/switchTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_toLeftOf="@+id/switchExpand">
+                <RadioGroup
+                    android:id="@+id/radioGroupSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/TextStyle.Title"
+                        android:id="@+id/rdoSearchPeriod"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_button_unselect"
+                        android:button="@android:color/transparent"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:text="@string/search_by_date"
+                        android:textColor="@color/color_black"/>
+
+                    <RadioButton
+                        style="@style/TextStyle.Title"
+                        android:id="@+id/rdoSearchDoctor"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:background="@drawable/tag_button_unselect"
+                        android:button="@android:color/transparent"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:text="@string/search_by_doctor"
+                        android:textColor="@color/color_black"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.truedigital.vhealth.utils.CustomViewPager
+            android:id="@+id/viewPagerMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

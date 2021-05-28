@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_normal"
+    android:layout_marginRight="@dimen/margin_normal">
+
+    <Button
+        style="@style/Button.Primary.Green"
+        android:id="@+id/btn_login_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:text="@string/login_button_request_otp" />
+
+    <ImageView
+        android:id="@+id/ivimage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="48dp"
+        android:padding="@dimen/padding_normal"
+        android:background="@drawable/circle_shape"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+    <RelativeLayout
+        android:id="@+id/card_view"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/margin_small"
+        android:background="@drawable/circle_shape">
+        <ImageView
+            android:id="@+id/ivimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+    </RelativeLayout>
+</RelativeLayout>

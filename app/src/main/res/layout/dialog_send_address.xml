@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dialog"
+    android:padding="@dimen/padding_normal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_dialog_rounder"
+        android:padding="@dimen/padding_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@id/btn_done">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_normal">
+
+                <ImageView
+                    style="@style/Button.Borderless"
+                    android:id="@+id/iv_home_back"
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:tint="@color/color_white"
+                    app:srcCompat="@drawable/ic_arrow_left_green_24dp"
+                    />
+
+                <TextView
+                    style="@style/TextStyle.Heading"
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_white"
+                    android:text="@string/dialog_send_title"
+                    />
+
+                <Button
+                    style="@style/Button.Borderless"
+                    android:id="@+id/btn_close"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_white"
+                    android:text="X"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_normal"
+                android:background="@drawable/bg_rounded_white">
+
+                <EditText
+                    style="@style/TextStyle.EditText.Green"
+                    android:id="@+id/edName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dialog_send_name"/>
+
+                <EditText
+                    style="@style/TextStyle.EditText.Green"
+                    android:id="@+id/edLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:hint="@string/dialog_send_lastname"/>
+
+                <EditText
+                    style="@style/TextStyle.EditText.Green"
+                    android:id="@+id/edAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:hint="@string/dialog_send_address"
+                    android:gravity="left"
+                    android:lines="5"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            style="@style/Button.Borderless"
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/color_white"
+            android:text="@string/appointment_dialog_person_next" />
+
+    </RelativeLayout>
+</LinearLayout>

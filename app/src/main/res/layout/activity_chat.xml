@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.truedigital.vhealth.ui.meeting.chat.ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_green"
+        android:gravity="top"
+        android:padding="0dp">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/image_top_bar_height"
+            android:src="@drawable/ic_app_logo_white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="@dimen/margin_small"
+            android:src="@drawable/ic_action_search"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:src="@drawable/ic_action_back"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/bg_color"
+        >
+
+        <include layout="@layout/toolbar_layout_v1"/>
+        <LinearLayout
+            android:id="@+id/toolbarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginBottom="@dimen/margin_mini"
+            android:padding="@dimen/padding_normal"
+            android:background="@drawable/rounded_toolbar"
+            android:gravity="bottom"
+            android:fitsSystemWindows="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/progress"
+                    android:layout_height="@dimen/progress"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/ivToolbarDoctorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:adjustViewBounds="true"
+                    android:layout_below="@+id/tvToolbarName"
+                    android:src="@drawable/image_doctor_test"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tvToolbarName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    style="@style/TextStyle.Heading.Green"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageButton
+                    android:id="@+id/ic_button_back"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:src="@drawable/ic_action_back"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:tint="@color/color_green"/>
+
+                <ImageView
+                    android:id="@+id/ic_button_close"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="visible"
+                    android:src="@drawable/selector_phone"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/toolbar_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="@dimen/margin_mini"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_item_circle"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivToolbarImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/new1" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        <include layout="@layout/content_chat_call"/>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

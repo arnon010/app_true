@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_small"
+    android:paddingBottom="@dimen/padding_small"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/txtBPM"
+        style="@style/ehr_TextStyle.Title.Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_medium"/>
+
+    <TextView
+        android:id="@+id/txtTime"
+        style="@style/ehr_TextStyle.Title.Green"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="end"
+        android:paddingRight="@dimen/padding_medium"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/imgNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_normal"
+        app:srcCompat="@drawable/img_next_green"/>
+
+</LinearLayout>

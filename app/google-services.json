@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "190803925182",
+    "firebase_url": "https://vhealth-v1.firebaseio.com",
+    "project_id": "vhealth-v1",
+    "storage_bucket": "vhealth-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190803925182:android:aa6e83748ce9f0666a26ef",
+        "android_client_info": {
+          "package_name": "com.truedigital.vhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190803925182-ljptr69ggkie7n70bhm7rvhselh0npnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr9Gc6SHplaNS5TFqONI6u-qzhhdMEEoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190803925182-ljptr69ggkie7n70bhm7rvhselh0npnp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "190803925182-9il56sbhi1u7tp22valuoau5bciduo2l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.truedigital.vhealth"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

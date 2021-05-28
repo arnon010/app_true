@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="80dp"
+    android:layout_gravity="center"
+    android:padding="@dimen/padding_medium"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small">
+
+        <LinearLayout
+            android:id="@+id/layout_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <include layout="@layout/item_card_thumbnail"/>
+        </LinearLayout>
+
+        <!--
+        <RelativeLayout
+            android:id="@+id/card_thumbnail"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/ic_profile_user" />
+
+        </RelativeLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/layout_thumbnail"
+            android:layout_toLeftOf="@+id/favorite_button"
+            android:layout_marginLeft="@dimen/margin_small">
+
+            <TextView
+                style="@style/TextStyle.Title"
+                android:id="@+id/card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/app_name"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <TextView
+                style="@style/TextStyle.Title"
+                android:id="@+id/card_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/app_name_chiiwii"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/color_green" />
+
+            <RadioGroup
+                android:id="@+id/optionSearch"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    style="@style/TextStyle.Title.Sub"
+                    android:id="@+id/radio0"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:background="@drawable/rounded_shape"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="อาการ"
+                    android:textColor="@color/color_gray_light"/>
+
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:background="@drawable/rounded_shape"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="หมอ"
+                    android:textColor="@color/color_gray_light"/>
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:background="@drawable/rounded_shape"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:text="คลีนิก"
+                    android:textColor="@color/color_gray_light"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/favorite_button"
+            android:layout_width="@dimen/cards_button_width"
+            android:layout_height="@dimen/cards_button_height"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_favorite_border_black_24dp" />
+    </RelativeLayout>
+
+    <!--
+    <ImageView
+        android:id="@+id/favorite_button"
+        android:layout_width="@dimen/cards_button_width"
+        android:layout_height="@dimen/cards_button_height"
+        android:layout_gravity="top|end"
+        app:srcCompat="@drawable/ic_favorite_border_black_24dp" />
+        -->
+</androidx.cardview.widget.CardView>

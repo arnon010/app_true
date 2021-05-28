@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dialog"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_normal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/padding_normal"
+        android:background="@drawable/background_dialog_rounder">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextStyle.Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="@string/rating_title"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextStyle.Heading.White"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="@string/app_name" />
+
+        <RatingBar
+            android:theme="@style/RatingBar"
+            android:id="@+id/ratetingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_normal"
+            android:rating="5"
+            android:numStars="5"
+            android:stepSize="1"/>
+
+        <EditText
+            style="@style/TextStyle.EditText.Green"
+            android:id="@+id/ed_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:lines="5"
+            android:hint="@string/rating_suggest_hint"/>
+
+        <Button
+            style="@style/Button.Borderless"
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/button_done" />
+    </LinearLayout>
+
+</RelativeLayout>

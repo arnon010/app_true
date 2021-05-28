@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/NestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.truedigital.vhealth.ui.login.phone.LoginPhoneActivity"
+    tools:showIn="com.truedigital.vhealth.ui.login.phone.LoginPhoneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_large"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_large"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:layout_margin="@dimen/margin_normal"
+            android:padding="@dimen/padding_mini"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_app_logo" />
+
+        <TextView
+            style="@style/TextStyle.Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:gravity="center"
+            android:text="@string/login_phone_title"
+            android:textColor="@color/color_green"/>
+
+        <TextView
+            style="@style/TextStyle.Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/login_phone_title_sub"
+            android:textColor="@color/color_green"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_normal">
+
+            <!--
+            <RelativeLayout
+                style="@style/Button.Primary.Green"
+                android:id="@+id/layout_login_phone1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <ImageView
+                    android:id="@+id/iv_login_phone1"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    app:srcCompat="@drawable/ic_phone" />
+
+
+                <TextView
+                    style="@style/TextStyle.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_login_phone1"
+                    android:text="@string/login_title_phone_number"
+                    android:textColor="@color/color_white" />
+
+            </RelativeLayout>
+            -->
+
+            <RelativeLayout
+                android:id="@+id/layout_login_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_label"
+                android:background="@color/color_red">
+                <ImageView
+                    android:id="@+id/iv_login_phone"
+                    android:layout_width="@dimen/image_label"
+                    android:layout_height="@dimen/image_label"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    app:srcCompat="@drawable/ic_phone" />
+
+                <EditText
+                    android:id="@+id/ed_login_phone"
+                    style="@style/TextStyle.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_next"
+                    android:layout_toRightOf="@+id/iv_login_phone"
+                    android:background="@color/color_green"
+                    android:hint="@string/login_phone"
+                    android:imeActionLabel="Send"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingStart="@dimen/padding_medium"
+                    android:textColor="@color/color_white"
+                    android:textColorHint="@color/intercom_semi_transparent" />
+
+                <ImageView
+                    style="@style/Button.Primary"
+                    android:id="@+id/iv_next"
+                    android:layout_width="@dimen/image_label"
+                    android:layout_height="@dimen/image_label"
+                    android:padding="@dimen/padding_small"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/color_green"
+                    app:srcCompat="@drawable/img_next_green"
+                    android:tint="@color/color_white" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textPoweredBy"
+                style="@style/TextStyle.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="@string/powered_by_chiiwii"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

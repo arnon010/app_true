@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calling_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dialog"
+    android:padding="@dimen/padding_normal"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_dialog_rounder"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/padding_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle.Heading"
+                android:id="@+id/tv_callingbar_hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:text="@string/callingbar_hello"
+                />
+
+            <TextView
+                style="@style/TextStyle.Heading"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:text="@string/callingbar_title"
+                android:layout_marginBottom="@dimen/margin_normal"
+                />
+
+            <TextView
+                style="@style/TextStyle.Heading"
+                android:id="@+id/tv_callingbar_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/color_white"
+                android:text="@string/callingbar_detail"
+                android:layout_marginBottom="@dimen/margin_normal"
+                />
+
+            <Button
+                style="@style/Button.Secondary"
+                android:id="@+id/btn_calling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/callingbar_button" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

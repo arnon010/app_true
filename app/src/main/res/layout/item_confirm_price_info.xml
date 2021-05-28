@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:layout_below="@id/item_confirm_price"
+        android:id="@+id/layout_price_detail"
+        android:layout_marginTop="-18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/background_dialog"
+        app:el_duration="500"
+        app:el_expanded="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_price_detail"
+                android:id="@+id/priceNoVat"/>
+            <include layout="@layout/item_price_detail"
+                android:id="@+id/priceVat"/>
+            <include layout="@layout/item_price_detail"
+                android:id="@+id/discountPrice"/>
+            <include layout="@layout/item_price_detail"
+                android:id="@+id/summaryPrice"/>
+
+        </LinearLayout>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+    <include layout="@layout/item_confirm_price" />
+
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextStyle.Title.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_account_setting"
+            android:textColor="@color/gray" />
+
+        <com.truedigital.vhealth.widget.SettingArrowView
+            android:id="@+id/svProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_profile" />
+
+        <com.truedigital.vhealth.widget.SettingArrowView
+            android:id="@+id/svChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_change_password" />
+
+        <com.truedigital.vhealth.widget.SettingArrowView
+            android:id="@+id/svChangePin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:enabled="false"
+            android:text="@string/setting_change_pin" />
+
+        <com.truedigital.vhealth.widget.SettingArrowView
+            android:id="@+id/svPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_payment_method"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextStyle.Title.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/payment_setting"
+            android:textColor="@color/gray" />
+
+        <com.truedigital.vhealth.widget.SettingArrowView
+            android:id="@+id/svInsuranceSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/insurance_setting" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextStyle.Title.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_langauge"
+            android:textColor="@color/gray" />
+
+        <com.truedigital.vhealth.widget.SettingCheckView
+            android:id="@+id/svLangTh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_lang_th" />
+
+        <com.truedigital.vhealth.widget.SettingCheckView
+            android:id="@+id/svLangEn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_lang_en" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextStyle.Title.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_policies"
+            android:textColor="@color/gray" />
+
+        <com.truedigital.vhealth.widget.SettingArrowView
+            android:id="@+id/svPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_privacy_policy" />
+
+        <com.truedigital.vhealth.widget.SettingArrowView
+            android:id="@+id/svTermsAndCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_terms_and_condition" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextStyle.Title.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_faq_and_manuals"
+            android:textColor="@color/gray" />
+
+        <com.truedigital.vhealth.widget.SettingArrowView
+            android:id="@+id/svFaq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_faq" />
+
+        <com.truedigital.vhealth.widget.SettingArrowView
+            android:id="@+id/svManuals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_manuals" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/Button.Primary.Green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/setting_logout" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

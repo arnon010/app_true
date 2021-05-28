@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:id="@+id/layout_thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <include layout="@layout/item_profile_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextStyle.Title.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_profile_login" />
+
+            <TextView
+                android:id="@+id/tvLogin"
+                style="@style/TextStyle.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_normal" />
+
+            <TextView
+                style="@style/TextStyle.Title.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_profile_name" />
+
+            <EditText
+                android:id="@+id/edUserName"
+                style="@style/TextStyle.EditText.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/setting_profile_name_hint"
+                android:maxLength="50" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_normal" />
+
+            <TextView
+                android:id="@+id/tv_title_password"
+                style="@style/TextStyle.Title.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/setting_profile_title_password" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                style="@style/TextStyle.Title.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_profile_password" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                style="@style/TextStyle.EditText.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/setting_profile_password_hint"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_normal" />
+
+            <TextView
+                android:id="@+id/tv_password_confirm"
+                style="@style/TextStyle.Title.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_profile_password_confirm" />
+
+            <EditText
+                android:id="@+id/edPasswordConfirm"
+                style="@style/TextStyle.EditText.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/setting_profile_password_confirm_hint"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/TextStyle.Title"
+                android:layout_width="@dimen/setting_button_confirm"
+                android:layout_height="@dimen/setting_button_confirm"
+                android:layout_margin="@dimen/margin_normal"
+                android:background="@drawable/selector_button_oval"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/button_confirm"
+                android:textColor="@color/color_white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_appinfo"
+                style="@style/Button.Primary.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_normal"
+                android:paddingEnd="@dimen/padding_normal"
+                android:text="@string/setting_profile_application" />
+
+            <Button
+                android:id="@+id/btn_confirm_2"
+                style="@style/Button.Primary.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/padding_normal"
+                android:paddingEnd="@dimen/padding_normal"
+                android:text="@string/button_confirm"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
