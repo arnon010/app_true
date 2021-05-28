@@ -1,46 +1,75 @@
 package com.truedigital.vhealth.ui.setting.insurance.view
 
+import android.annotation.SuppressLint
+import android.app.Dialog
 import android.os.Bundle
-import androidx.appcompat.app.AlertDialog
+import android.view.Gravity
+import android.view.Window
+import android.view.WindowManager
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatImageView
-import androidx.appcompat.widget.AppCompatTextView
+import androidx.databinding.DataBindingUtil
 import com.truedigital.vhealth.R
+import com.truedigital.vhealth.databinding.ActivityInsuranceEditBinding
 
 
 class InsuranceEditActivity : AppCompatActivity() {
 
+    lateinit var binding: ActivityInsuranceEditBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_insurance_edit)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_insurance_edit)
 
-        var txtPosition = findViewById<AppCompatTextView>(R.id.txtPosition)
-        var imgInsuranceEdit = findViewById<AppCompatImageView>(R.id.imgInsuranceEdit)
         val bundle: Bundle = intent.extras!!
-        val positions : String? = bundle.getString("position")
+        val positions: String? = bundle.getString("position")
         val image: Int = bundle.getInt("image")
-        imgInsuranceEdit.setImageResource(image)
-        val txtGoBack = findViewById<AppCompatTextView>(R.id.txtGoBack)
-        txtGoBack.setOnClickListener {
-            onBackPressed()
+        binding.imgInsuranceEdit.setImageResource(image)
+
+        binding.txtGoBack.setOnClickListener {
+            finish()
         }
-        val txtDeleteInsurance = findViewById<AppCompatTextView>(R.id.txtDeleteInsurance)
-        txtDeleteInsurance.setOnClickListener {
-            val alertDialogBuilder = AlertDialog.Builder(this)
-            alertDialogBuilder.setTitle(R.string.pin_forgot_otp__title_confirm_cancel)
-            alertDialogBuilder.setPositiveButton(R.string.button_yes) { _, _ ->
-                finish()
-            }
-            alertDialogBuilder.setNegativeButton(R.string.button_no) { _, _ ->
-            }
-            val alertDialog = alertDialogBuilder.create()
-            alertDialog.setCanceledOnTouchOutside(false)
-            alertDialog.show()
+
+        binding.txtDeleteInsurance.setOnClickListener {
+            showDialog("Do you want to delete {{Insurance}} ?")
         }
+
+
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
+    @SuppressLint("ResourceAsColor")
+    private fun showDialog(msg: String) {
+        val dialog = Dialog(this, R.style.roundCornerDialog)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCanceledOnTouchOutside(false)
+        dialog.setContentView(R.layout.custom_dialog)
+
+        val txtTitle = dialog.findViewById<TextView>(R.id.txtTitleDialog)
+        val btnCancel = dialog.findViewById<Button>(R.id.btnCancelDialog)
+        val btnSubmit = dialog.findViewById<Button>(R.id.btnSubmitDialog)
+
+        txtTitle.text = msg
+        txtTitle.setTextColor(R.color.black)
+        btnCancel.text = "No"
+        btnSubmit.text = "Yes"
+        btnCancel.setOnClickListener {
+            dialog.dismiss()
+        }
+        btnSubmit.setOnClickListener {
+            dialog.dismiss()
+            finish()
+        }
+
+        val lp = WindowManager.LayoutParams()
+        lp.copyFrom(dialog.window!!.attributes)
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT
+        lp.height = WindowManager.LayoutParams.WRAP_CONTENT
+        lp.gravity = Gravity.CENTER
+
+        dialog.window!!.attributes = lp
+
+        dialog.show()
     }
+
 }

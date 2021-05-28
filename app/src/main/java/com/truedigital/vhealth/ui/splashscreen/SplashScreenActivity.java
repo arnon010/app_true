@@ -9,6 +9,7 @@ import com.truedigital.vhealth.manager.AppManager;
 import com.truedigital.vhealth.ui.base.BaseMvpActivity;
 import com.truedigital.vhealth.ui.login.LoginActivity;
 import com.truedigital.vhealth.ui.main.MainActivity;
+import com.truedigital.vhealth.ui.setting.testinsurance.KoinStart;
 import com.truedigital.vhealth.ui.tutorial.TutorialActivity;
 
 /**
@@ -104,6 +105,8 @@ public class SplashScreenActivity extends BaseMvpActivity<SplashScreenActivityIn
                         intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
                     }
                 }
+
+                KoinStart.Companion.initKoin(getApplicationContext());
 
                 startActivity(intent);
                 finish();

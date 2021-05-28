@@ -520,4 +520,9 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
+
+    <style name="roundCornerDialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="background">@color/transparent</item>
+        <item name="dialogCornerRadius">10dp</item>
+    </style>
 </resources>

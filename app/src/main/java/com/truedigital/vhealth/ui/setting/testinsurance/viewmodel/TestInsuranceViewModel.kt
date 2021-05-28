@@ -1,48 +1,40 @@
 package com.truedigital.vhealth.ui.setting.testinsurance.viewmodel
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.truedigital.vhealth.R
+import com.truedigital.vhealth.api.network.Result
 import com.truedigital.vhealth.ui.setting.testinsurance.model.User
+import com.truedigital.vhealth.ui.setting.testinsurance.repo.InsuranceRepository
+import kotlinx.coroutines.launch
 import java.util.*
+import kotlin.collections.ArrayList
 
-class TestInsuranceViewModel : ViewModel() {
-    private var userLiveData: MutableLiveData<ArrayList<User>?> = MutableLiveData<ArrayList<User>?>()
-    var userArrayList: ArrayList<User>? = null
-    val userMutableLiveData: MutableLiveData<ArrayList<User>?>
-        get() = userLiveData
+class TestInsuranceViewModel(private val insuranceRepository: InsuranceRepository) : ViewModel() {
 
-    fun init() {
-        populateList()
-//        getGitUsersData()
-        userLiveData.value = userArrayList
-    }
+    private val _user = MutableLiveData<Result<ArrayList<User>>>()
+    val user: LiveData<Result<ArrayList<User>>> get() = _user
 
-    fun populateList() {
+//    fun init() {
+//        getPopulate()
+//    }
 
-        val user = User()
-        user.title = "AIA"
-        user.description = "XXX-X-XXX"
-        user.imgIcon = R.drawable.aia
-
-        val user2 = User()
-        user2.title = "Cigna"
-        user2.description = "XXX-X-XXX"
-        user2.imgIcon = R.drawable.cigna
-
-        userArrayList = ArrayList<User>()
-        userArrayList!!.add(user)
-        userArrayList!!.add(user2)
-    }
-
-
-    fun getGitUsersData(): MutableLiveData<ArrayList<User>?> {
-        return userLiveData
-    }
-
-    init {
-
-        // call your Rest API in init method
-        init()
+    fun getPopulate() {
+        viewModelScope.launch {
+            _user.value = Result.Loading()
+            val userData = insuranceRepository.getInsurance()
+            val userDataInfo = userData.body()
+            if (userData.isSuccessful && userDataInfo != null) {
+                _user.value = Result.Success(userDataInfo)
+            } else {
+                val users = ArrayList<User>()
+                users.add(User("AIA", "XXX-X-XXX", R.drawable.aia))
+                users.add(User("Cigna", "XXX-X-XXX", R.drawable.cigna))
+                _user.value = Result.Success(users)
+//                _user.value = Result.Error()
+            }
+        }
     }
 }
