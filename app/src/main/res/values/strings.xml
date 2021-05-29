@@ -1048,6 +1048,7 @@
     <string name="set_default">Set Default</string>
     <string name="back"><u>Back</u></string>
     <string name="delete_insurance"><u>Delete Insurance</u></string>
-
+    <string name="insurance">Insurance</string>
+    <string name="your_insurance">Your Insurance</string>
 
 </resources>

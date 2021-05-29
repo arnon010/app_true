@@ -103,18 +103,7 @@
                 android:visibility="gone" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/layout_coupon"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/padding_normal"
-            android:orientation="vertical"
-            android:padding="@dimen/padding_normal">
 
-            <include layout="@layout/item_coupon_info" />
-
-            <include layout="@layout/item_confirm_price_info" />
-        </LinearLayout>
 
 
         <LinearLayout
@@ -164,6 +153,19 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_small"
                     android:text="@string/payment_button_prompt_pay" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_normal">
+
+                <include layout="@layout/item_coupon_info" />
+
+                <include layout="@layout/item_confirm_price_info" />
             </LinearLayout>
 
             <LinearLayout

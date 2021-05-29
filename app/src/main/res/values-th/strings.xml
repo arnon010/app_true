@@ -1043,4 +1043,7 @@
     <string name="set_default">ตั้งค่าเริ่มต้น</string>
     <string name="back"><u>กลับ</u></string>
     <string name="delete_insurance"><u>ลบ ประกันภัย</u></string>
+    <string name="insurance">ประกัน</string>
+    <string name="your_insurance">ประกันของคุณ</string>
+
 </resources>

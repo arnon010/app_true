@@ -136,6 +136,7 @@ import com.truedigital.vhealth.ui.product.confirm.ProductConfirmFragment;
 import com.truedigital.vhealth.ui.product.detail.ProductDetailFragment;
 import com.truedigital.vhealth.ui.setting.info.SettingAppFragment;
 import com.truedigital.vhealth.ui.setting.lang.SettingLangFragment;
+import com.truedigital.vhealth.ui.setting.testinsurance.ui.TestInsuranceHealthActivity;
 import com.truedigital.vhealth.ui.shipping.ShippingStatusFragment;
 import com.truedigital.vhealth.utils.AppConstants;
 import com.truedigital.vhealth.utils.AppointmentUtil;
