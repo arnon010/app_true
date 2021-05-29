@@ -1050,5 +1050,11 @@
     <string name="delete_insurance"><u>Delete Insurance</u></string>
     <string name="insurance">Insurance</string>
     <string name="your_insurance">Your Insurance</string>
+    <string name="text_insurance_health_1">My health information would be necessary for true Health\'s consulation service, via this application, to manage my health profile, consult with physicians/doctors and order the medicine.</string>
+    <string name="text_insurance_health_2">I hereby consent to allow True Health and its authorized staffs and other authorized person/practitioners such as physicians/doctors and pharmacists to access and use my health information for the existing and future services as requested by me.</string>
+    <string name="text_select_insurance">Please select your insurance</string>
+    <string name="text_error_insurance_failed">Error message if KYC failed</string>
+    <string name="text_setup_insurance">ตั้งค่าประกันในภายหลัง</string>
+    <string name="text_continue">Continue</string>
 
 </resources>

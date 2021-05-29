@@ -20,14 +20,15 @@
             android:id="@+id/layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lytToolbar">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imgInsuranceForm"
-                android:layout_width="140dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:adjustViewBounds="true"
                 android:src="@drawable/aia"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -40,10 +41,11 @@
         <androidx.core.widget.NestedScrollView
             android:id="@+id/nestedScrollView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:padding="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/btnSetDefault"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/layout"
@@ -125,6 +127,7 @@
         </androidx.core.widget.NestedScrollView>
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -133,9 +136,7 @@
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nestedScrollView2"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintStart_toStartOf="parent">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnCancel"
@@ -155,7 +156,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_weight="1"
-                android:text="Continue"
+                android:text="@string/text_continue"
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
         </LinearLayout>

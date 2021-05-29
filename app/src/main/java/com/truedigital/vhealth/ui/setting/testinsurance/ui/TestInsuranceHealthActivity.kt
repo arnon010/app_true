@@ -13,7 +13,6 @@ import com.truedigital.vhealth.ui.setting.testinsurance.adapter.InsuranceHealthA
 
 
 class TestInsuranceHealthActivity : AppCompatActivity(), LifecycleOwner {
-    //    private val insuranceViewModel: TestInsuranceViewModel by inject()
     lateinit var binding: ActivityTestInsuranceHealthBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +25,7 @@ class TestInsuranceHealthActivity : AppCompatActivity(), LifecycleOwner {
         list.add(R.drawable.cigna)
         list.add(R.drawable.aia)
         list.add(R.drawable.cigna)
-        list.add(R.drawable.cigna)
+        list.add(R.drawable.aia)
         list.add(R.drawable.cigna)
 
         val insuranceHealthAdapter = InsuranceHealthAdapter(list)

@@ -2,8 +2,6 @@ package com.truedigital.vhealth.ui.setting.testinsurance.ui
 
 import android.annotation.SuppressLint
 import android.app.Dialog
-import android.content.Context
-import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.Gravity
@@ -11,28 +9,11 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.truedigital.vhealth.R
-import com.truedigital.vhealth.api.network.Result
 import com.truedigital.vhealth.databinding.ActivityInsuranceFormBinding
-import com.truedigital.vhealth.databinding.ActivityTestInsuranceBinding
-import com.truedigital.vhealth.ui.setting.testinsurance.adapter.InsuranceAdapter
-import com.truedigital.vhealth.ui.setting.testinsurance.apiServiceModule
-import com.truedigital.vhealth.ui.setting.testinsurance.model.User
-import com.truedigital.vhealth.ui.setting.testinsurance.repositoryModule
-import com.truedigital.vhealth.ui.setting.testinsurance.viewModelModule
-import com.truedigital.vhealth.ui.setting.testinsurance.viewmodel.TestInsuranceViewModel
-import org.koin.android.ext.android.inject
-import org.koin.android.ext.koin.androidContext
-import org.koin.core.context.startKoin
-import org.koin.dsl.module
-import java.util.*
 
 class TestInsuranceFormActivity : AppCompatActivity(), LifecycleOwner {
     lateinit var binding: ActivityInsuranceFormBinding
@@ -41,12 +22,15 @@ class TestInsuranceFormActivity : AppCompatActivity(), LifecycleOwner {
         super.onCreate(savedInstanceState)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_insurance_form)
-
+        val image = intent.getIntExtra("image", 0)
+        binding.imgInsuranceForm.setImageResource(image)
 
         binding.btnContinue.setOnClickListener {
-            showDialog("title", "detail")
+            showDialog("คุณสามารถใช้สิทธิประกันในการรับบริการ", "กดปุ่ม\n" + "*ดำเนินการต่อ* เพื่อยืนยันตัวตนของท่าน\n" + "หรือ\n" + "ยกเลิกการตั้งค่าประกัน\n" + "ซึ่งคุณสามารถทำการตั้งค่าภายหลังได้ในเมนู\n" + "*การตั้งค่า*")
 
         }
+
+        binding.btnCancel.setOnClickListener { finish() }
     }
 
     @SuppressLint("ResourceAsColor")
@@ -62,9 +46,11 @@ class TestInsuranceFormActivity : AppCompatActivity(), LifecycleOwner {
         val btnAccept = dialog.findViewById<Button>(R.id.btnAccept)
 
         txtTitle1.text = msg1
-        txtTitle1.setTypeface(txtTitle1.typeface, Typeface.BOLD_ITALIC)
+        txtTitle1.setTypeface(txtTitle1.typeface, Typeface.BOLD)
         txtTitle1.setTextColor(R.color.black)
+        txtTitle1.textSize = 16f
         txtTitle2.text = msg2
+        txtTitle2.gravity = Gravity.LEFT
         btnCancel.setOnClickListener {
             dialog.dismiss()
         }

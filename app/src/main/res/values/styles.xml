@@ -523,6 +523,6 @@
 
     <style name="roundCornerDialog" parent="Theme.MaterialComponents.Dialog">
         <item name="background">@color/transparent</item>
-        <item name="dialogCornerRadius">10dp</item>
+        <item name="dialogCornerRadius">4dp</item>
     </style>
 </resources>

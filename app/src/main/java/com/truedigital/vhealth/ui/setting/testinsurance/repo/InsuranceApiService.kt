@@ -7,6 +7,6 @@ import retrofit2.http.GET
 
 interface InsuranceApiService {
 
-    @GET("/arnon")
+    @GET("/endpoint")
     suspend fun getInsurance(): Response<ArrayList<User>>
 }

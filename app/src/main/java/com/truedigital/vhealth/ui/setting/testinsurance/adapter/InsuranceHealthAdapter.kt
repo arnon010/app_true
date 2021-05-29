@@ -1,6 +1,5 @@
 package com.truedigital.vhealth.ui.setting.testinsurance.adapter
 
-import android.annotation.SuppressLint
 import android.app.Dialog
 import android.content.Context
 import android.content.Intent
@@ -8,14 +7,10 @@ import android.view.*
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.widget.NestedScrollView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.truedigital.vhealth.R
 import com.truedigital.vhealth.databinding.ItemInsuramceHealthBinding
-import com.truedigital.vhealth.databinding.WidgetSettingCheckWithImageBinding
-import com.truedigital.vhealth.ui.setting.insurance.view.InsuranceEditActivity
-import com.truedigital.vhealth.ui.setting.testinsurance.model.User
 import com.truedigital.vhealth.ui.setting.testinsurance.ui.TestInsuranceFormActivity
 import io.intercom.com.bumptech.glide.Glide
 import java.util.*
@@ -47,8 +42,9 @@ class InsuranceHealthAdapter(private var listImage: ArrayList<Int>) :
 
                 imgInsuranceHealth.setOnClickListener {
                     showDialog(context,
-                            "แล้วฉันเลือกอะไรได้ไหม เลือกให้เธอไม่ไปได้หรือเปล่า หากไม่ยอมให้ไปจะตามใจฉันหรือเธอ ฉันจะเลือกให้เธอเลือกฉัน ไม่ให้ไปกับเขาได้หรือเปล่า สิ่งที่เธอถามมาให้ตอบอย่างไรได้ละเธอ ก็ไม่มีทางให้เลือกเลย",
-                            "แล้วฉันเลือกอะไรได้ไหม เลือกให้เธอไม่ไปได้หรือเปล่า หากไม่ยอมให้ไปจะตามใจฉันหรือเธอ ฉันจะเลือกให้เธอเลือกฉัน ไม่ให้ไปกับเขาได้หรือเปล่า สิ่งที่เธอถามมาให้ตอบอย่างไรได้ละเธอ ก็ไม่มีทางให้เลือกเลย")
+                            context.getString(R.string.text_insurance_health_1),
+                            context.getString(R.string.text_insurance_health_2),
+                            img)
                 }
 
                 handleSizeImage(imgInsuranceHealth, )
@@ -71,7 +67,7 @@ class InsuranceHealthAdapter(private var listImage: ArrayList<Int>) :
         })
     }
 
-    private fun showDialog(context: Context, msg1: String, msg2: String) {
+    private fun showDialog(context: Context, msg1: String, msg2: String, img: Int) {
         val dialog = Dialog(context, R.style.roundCornerDialog)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.setCanceledOnTouchOutside(false)
@@ -89,7 +85,9 @@ class InsuranceHealthAdapter(private var listImage: ArrayList<Int>) :
         }
         btnAccept.setOnClickListener {
             dialog.dismiss()
-            context.startActivity(Intent(context, TestInsuranceFormActivity::class.java))
+            val intent = Intent(context, TestInsuranceFormActivity::class.java)
+            intent.putExtra("image", img)
+            context.startActivity(intent)
         }
 
         val lp = WindowManager.LayoutParams()
