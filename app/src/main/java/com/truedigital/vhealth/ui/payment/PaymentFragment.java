@@ -1,13 +1,19 @@
 package com.truedigital.vhealth.ui.payment;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.Html;
 import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
+import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -15,6 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -57,6 +64,8 @@ import com.truedigital.vhealth.utils.PickFile;
 import com.truedigital.vhealth.utils.SpannableText;
 
 import net.cachapa.expandablelayout.ExpandableLayout;
+
+import org.w3c.dom.Text;
 
 import java.security.GeneralSecurityException;
 import java.util.ArrayList;
@@ -170,6 +179,13 @@ public class PaymentFragment extends BaseMvpFragment<PaymentFragmentInterface.Pr
     private String imageSlipUrl;
     private ImageView imgAttach;
     private FirebaseAnalytics mFirebaseAnalytics;
+
+    private TextView txtTitleDialog1;
+    private TextView txtTitleDialog2;
+    private TextView txtTitleDialog3;
+
+    private Button btnCancel;
+    private Button btnContinue;
 
     public interface OnCallback {
         void onBuyProductSuccess(PaymentDao data);
@@ -487,11 +503,87 @@ public class PaymentFragment extends BaseMvpFragment<PaymentFragmentInterface.Pr
     private View.OnClickListener onDoneButtonClick() {
         return v -> {
             if (payment_mode == PAYMENT_MODE_APPOINTMENT) {
-                onCreateAppointment();
+                showDialogForCreateAppointment();
             } else {
-                onBuyProduct();
+                showDialogForBuyProduct();
             }
         };
+    }
+
+    public void showDialogForCreateAppointment(){
+        Dialog dialog = new Dialog(getContext(), R.style.roundCornerDialog);
+        dialog.setContentView(R.layout.custom_payment_dialog);
+        txtTitleDialog1 = dialog.findViewById(R.id.txtTitleDialog1);
+        txtTitleDialog2 = dialog.findViewById(R.id.txtTitleDialog2);
+        txtTitleDialog3 = dialog.findViewById(R.id.txtTitleDialog3);
+        btnCancel = dialog.findViewById(R.id.btnCancel);
+        btnContinue = dialog.findViewById(R.id.btnContinue);
+
+        txtTitleDialog1.setText("สิทธิความคุ้มครองประกัน");
+        txtTitleDialog2.setText("สิทธิประกันในการรับบริการได้ภายใต้ วงเงิน 2,000 บาท\n" +
+                "\n" +
+                "หากคุณยืนยันการนัดหมายแล้ว สิทธิประกันของคุณจะ\n" +
+                "ถูกใช้และไม่สามารถขอคืนได้\n" +
+                "\n" +
+                "เพื่อรักษาสิทธิของคุณโปรดเข้าใช้ บริการปรึกษาแพทย์ตามเวลาที่คุณได้นัดหมายไว้");
+        String redString = getResources().getString(R.string.condition_insurance);
+        txtTitleDialog3.setText(Html.fromHtml(redString));
+        txtTitleDialog3.setOnClickListener(view -> {
+            openPopup(R.string.setting_app_term, BuildConfig.SERVER_BASE_INFO + SettingAppFragment.ENDPOINT_TERM);
+        });
+        btnCancel.setOnClickListener(view -> {
+            dialog.dismiss();
+        });
+        btnContinue.setOnClickListener(view -> {
+            dialog.dismiss();
+            onCreateAppointment();
+        });
+
+        Window window = dialog.getWindow();
+        WindowManager.LayoutParams windowManager = window.getAttributes();
+        windowManager.width = WindowManager.LayoutParams.MATCH_PARENT;
+        windowManager.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        windowManager.gravity = Gravity.CENTER;
+        dialog.getWindow().setAttributes(windowManager);
+        dialog.show();
+    }
+
+    public void showDialogForBuyProduct(){
+        Dialog dialog = new Dialog(getContext(), R.style.roundCornerDialog);
+        dialog.setContentView(R.layout.custom_payment_dialog);
+        txtTitleDialog1 = dialog.findViewById(R.id.txtTitleDialog1);
+        txtTitleDialog2 = dialog.findViewById(R.id.txtTitleDialog2);
+        txtTitleDialog3 = dialog.findViewById(R.id.txtTitleDialog3);
+        btnCancel = dialog.findViewById(R.id.btnCancel);
+        btnContinue = dialog.findViewById(R.id.btnContinue);
+
+        txtTitleDialog1.setText("สิทธิความคุ้มครองประกัน");
+        txtTitleDialog2.setText("สิทธิประกันในการรับบริการได้ภายใต้ วงเงิน 2,000 บาท\n" +
+                "\n" +
+                "หากคุณยืนยันการนัดหมายแล้ว สิทธิประกันของคุณจะ\n" +
+                "ถูกใช้และไม่สามารถขอคืนได้\n" +
+                "\n" +
+                "เพื่อรักษาสิทธิของคุณโปรดเข้าใช้ บริการปรึกษาแพทย์ตามเวลาที่คุณได้นัดหมายไว้");
+        String redString = getResources().getString(R.string.condition_insurance);
+        txtTitleDialog3.setText(Html.fromHtml(redString));
+        txtTitleDialog3.setOnClickListener(view -> {
+            openPopup(R.string.setting_app_term, BuildConfig.SERVER_BASE_INFO + SettingAppFragment.ENDPOINT_TERM);
+        });
+        btnCancel.setOnClickListener(view -> {
+            dialog.dismiss();
+        });
+        btnContinue.setOnClickListener(view -> {
+            dialog.dismiss();
+            onBuyProduct();
+        });
+
+        Window window = dialog.getWindow();
+        WindowManager.LayoutParams windowManager = window.getAttributes();
+        windowManager.width = WindowManager.LayoutParams.MATCH_PARENT;
+        windowManager.height = WindowManager.LayoutParams.WRAP_CONTENT;
+        windowManager.gravity = Gravity.CENTER;
+        dialog.getWindow().setAttributes(windowManager);
+        dialog.show();
     }
 
     private void onCreateAppointment() {
