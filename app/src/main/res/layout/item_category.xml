@@ -20,6 +20,16 @@
             android:layout_width="@dimen/image_category"
             android:layout_height="@dimen/image_category"
             tools:src="@drawable/new1" />
+
+        <ImageView
+            android:id="@+id/imageInsuranceMini"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/aia"
+            android:src="@drawable/aia"
+            android:layout_gravity="end"/>
+
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

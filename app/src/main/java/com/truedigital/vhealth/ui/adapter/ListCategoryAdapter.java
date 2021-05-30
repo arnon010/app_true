@@ -53,6 +53,12 @@ public class ListCategoryAdapter extends RecyclerView.Adapter<ListCategoryAdapte
                 .asBitmap()
                 .placeholder(R.drawable.img_iph_defaultimg2x)
                 .into(holder.imgProfile);
+        //Uncomment when can get data for .load(data.image)
+//        Glide.with(context)
+//                .load(data.getLogoImage())
+//                .asBitmap()
+//                .placeholder(R.drawable.img_iph_defaultimg2x)
+//                .into(holder.imageInsuranceMini);
 
         holder.itemView.setOnClickListener(view -> onItemClickListener.onItemClick(view, position));
     }
@@ -65,10 +71,12 @@ public class ListCategoryAdapter extends RecyclerView.Adapter<ListCategoryAdapte
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private final ImageView imgProfile;
+        private final ImageView imageInsuranceMini;
 
         public ViewHolder(View v) {
             super(v);
             imgProfile = v.findViewById(R.id.card_image);
+            imageInsuranceMini = v.findViewById(R.id.imageInsuranceMini);
         }
     }
 

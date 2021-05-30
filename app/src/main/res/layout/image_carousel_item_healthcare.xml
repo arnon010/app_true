@@ -25,5 +25,14 @@
             android:padding="@dimen/padding_mini"
             tools:srcCompat="@drawable/circle_gray" />
 
+        <ImageView
+            android:id="@+id/imageInsuranceMini"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/aia"
+            android:src="@drawable/aia"
+            android:layout_gravity="end"/>
+
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

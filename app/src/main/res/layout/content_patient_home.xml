@@ -59,7 +59,6 @@
         android:scrollbars="vertical"
         android:fadeScrollbars="true"
         tools:listitem="@layout/image_carousel_item_healthcare"/>
-    />
 
     <LinearLayout
         android:id="@+id/layout_doctor_standby"

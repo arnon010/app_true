@@ -38,6 +38,12 @@ class HealthcareAdapter : RecyclerView.Adapter<HealthcareAdapter.ViewHolder>() {
                     .asBitmap()
                     .placeholder(R.drawable.img_iph_defaultimg2x)
                     .into(itemView.findViewById(R.id.imageView))
+            //Uncomment when can get data for .load(data.image)
+//            Glide.with(itemView.context)
+//                    .load(data.logoImage)
+//                    .asBitmap()
+//                    .placeholder(R.drawable.img_iph_defaultimg2x)
+//                    .into(itemView.findViewById(R.id.imageInsuranceMini))
         }
     }
 
