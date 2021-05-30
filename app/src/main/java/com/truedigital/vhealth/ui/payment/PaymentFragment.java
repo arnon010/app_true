@@ -2,7 +2,6 @@ package com.truedigital.vhealth.ui.payment;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,7 +20,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -51,7 +51,7 @@ import com.truedigital.vhealth.ui.main.MainActivity;
 import com.truedigital.vhealth.ui.payment.promptpay.AppointmentUiModel;
 import com.truedigital.vhealth.ui.payment.promptpay.PromptpayActivity;
 import com.truedigital.vhealth.ui.setting.info.SettingAppFragment;
-import com.truedigital.vhealth.ui.setting.testinsurance.ui.TestInsuranceActivity;
+import com.truedigital.vhealth.ui.setting.testinsurance.ui.TestInsuranceFragment;
 import com.truedigital.vhealth.ui.setting.testinsurance.ui.TestInsuranceHealthActivity;
 import com.truedigital.vhealth.utils.AmountUtils;
 import com.truedigital.vhealth.utils.AppConstants;
@@ -64,8 +64,6 @@ import com.truedigital.vhealth.utils.PickFile;
 import com.truedigital.vhealth.utils.SpannableText;
 
 import net.cachapa.expandablelayout.ExpandableLayout;
-
-import org.w3c.dom.Text;
 
 import java.security.GeneralSecurityException;
 import java.util.ArrayList;
@@ -361,8 +359,18 @@ public class PaymentFragment extends BaseMvpFragment<PaymentFragmentInterface.Pr
             layoutAddInsuranceSuccess.setVisibility(View.VISIBLE);
             txtYourInsurance.setText(getString(R.string.your_insurance)+ " " + strYourInsurance + ":" + strNumberInsurance);
             imgInsurance.setImageResource(intImgInsurance);
-            layoutAddInsuranceSuccess.setOnClickListener(view ->
-                    startActivity(new Intent(getContext(), TestInsuranceActivity.class)));
+            layoutAddInsuranceSuccess.setOnClickListener(view -> {
+                TestInsuranceFragment testInsuranceFragment = new TestInsuranceFragment();
+                Bundle bundle = new Bundle();
+                bundle.putBoolean("insuranceFromSetting", true);
+                testInsuranceFragment.setArguments(bundle);
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content_main, testInsuranceFragment)
+                        .addToBackStack(null)
+                        .commit();
+            });
         }
 
         FirebaseAddEventsBeginCheckout();
@@ -510,7 +518,7 @@ public class PaymentFragment extends BaseMvpFragment<PaymentFragmentInterface.Pr
         };
     }
 
-    public void showDialogForCreateAppointment(){
+    public void showDialogForCreateAppointment() {
         Dialog dialog = new Dialog(getContext(), R.style.roundCornerDialog);
         dialog.setContentView(R.layout.custom_payment_dialog);
         txtTitleDialog1 = dialog.findViewById(R.id.txtTitleDialog1);
@@ -548,7 +556,7 @@ public class PaymentFragment extends BaseMvpFragment<PaymentFragmentInterface.Pr
         dialog.show();
     }
 
-    public void showDialogForBuyProduct(){
+    public void showDialogForBuyProduct() {
         Dialog dialog = new Dialog(getContext(), R.style.roundCornerDialog);
         dialog.setContentView(R.layout.custom_payment_dialog);
         txtTitleDialog1 = dialog.findViewById(R.id.txtTitleDialog1);

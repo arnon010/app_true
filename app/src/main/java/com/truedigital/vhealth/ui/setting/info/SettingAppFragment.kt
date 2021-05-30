@@ -1,6 +1,7 @@
 package com.truedigital.vhealth.ui.setting.info
 
 import android.content.Intent
+import android.os.Bundle
 import com.truedigital.vhealth.BuildConfig
 import com.truedigital.vhealth.R
 import com.truedigital.vhealth.databinding.FragmentSettingAppBinding
@@ -9,7 +10,7 @@ import com.truedigital.vhealth.ui.base.BaseMvpBindingFragment
 import com.truedigital.vhealth.ui.password.change.PasswordChangeActivity
 import com.truedigital.vhealth.ui.pin.change.PinChangeActivity
 import com.truedigital.vhealth.ui.setting.profle.SettingProfileActivity
-import com.truedigital.vhealth.ui.setting.testinsurance.ui.TestInsuranceActivity
+import com.truedigital.vhealth.ui.setting.testinsurance.ui.TestInsuranceFragment
 import com.truedigital.vhealth.utils.AppConstants.LOCAL_LANG_ENG
 import com.truedigital.vhealth.utils.AppConstants.LOCAL_LANG_THAI
 import com.truedigital.vhealth.utils.CommonUtils
@@ -48,9 +49,13 @@ class SettingAppFragment : BaseMvpBindingFragment<SettingAppFragmentInterface.Pr
 
             }
             svInsuranceSetting.onItemClicked {
-//               TestInsuranceActivity.startIntern(requireContext())
-                val intent = Intent(context, TestInsuranceActivity::class.java)
-                context?.startActivity(intent)
+                val fragment = TestInsuranceFragment()
+                val bundle = Bundle()
+                bundle.putBoolean("insuranceFromSetting", false)
+                fragment.arguments = bundle
+                val transaction = activity?.supportFragmentManager?.beginTransaction()
+                transaction?.replace(R.id.content_main, fragment)?.addToBackStack(null)
+                transaction?.commit()
             }
 
             val lang = CommonUtils.getLocalLanguage()

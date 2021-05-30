@@ -7,7 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.setting.testinsurance.ui.TestInsuranceActivity">
+        tools:context=".ui.setting.testinsurance.ui.TestInsuranceFragment">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/appCompatImageView"

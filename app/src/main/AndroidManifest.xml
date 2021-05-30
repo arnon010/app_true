@@ -289,9 +289,6 @@
             android:name=".ui.setting.insurance.view.InsuranceActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.setting.testinsurance.ui.TestInsuranceActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".ui.setting.testinsurance.ui.TestInsuranceHealthActivity"
             android:screenOrientation="portrait" />
         <activity

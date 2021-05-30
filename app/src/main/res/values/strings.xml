@@ -1057,4 +1057,5 @@
     <string name="text_setup_insurance">ตั้งค่าประกันในภายหลัง</string>
     <string name="text_continue">Continue</string>
     <string name="condition_insurance"><![CDATA[เงื่อนไขการใช้สิทธิประกัน <b><u><font color=#FF0000>อ่านต่อ…</font></u></b>]]></string>
+    <string name="text_dont_use_insurance">Don\'t use insurance</string>
 </resources>

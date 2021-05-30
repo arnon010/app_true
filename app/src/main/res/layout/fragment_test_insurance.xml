@@ -7,14 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.setting.testinsurance.ui.TestInsuranceActivity">
-
-        <include
-            android:id="@+id/lytToolbar"
-            layout="@layout/toolbar_layout_v1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        tools:context=".ui.setting.testinsurance.ui.TestInsuranceFragment">
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -22,7 +15,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/lytToolbar">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
             <LinearLayout
                 android:id="@+id/lnInsuranceList"
@@ -36,6 +30,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/lytToolbar">
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtInsuranceSetting"
                     style="@style/TextStyle.Title.Big"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,6 +44,18 @@
                     android:layout_height="match_parent"
                     android:scrollbars="vertical"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnNoInsurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/text_dont_use_insurance"
+                    android:textColor="@color/gray" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btnUpdateProfile"
