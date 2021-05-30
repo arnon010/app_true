@@ -64,6 +64,7 @@
                 android:layout_height="match_parent" />
         </androidx.core.widget.NestedScrollView>
 
+<!--        Visible When KYC response fail-->
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txtErrorMessage"
             android:layout_width="wrap_content"
@@ -73,7 +74,8 @@
             android:textColor="@color/color_red"
             app:layout_constraintBottom_toTopOf="@+id/txtSetUpInsurance"
             app:layout_constraintEnd_toEndOf="@+id/nestedScrollView"
-            app:layout_constraintStart_toStartOf="@+id/nestedScrollView" />
+            app:layout_constraintStart_toStartOf="@+id/nestedScrollView"
+            android:visibility="gone"/>
 
 
         <androidx.appcompat.widget.AppCompatTextView

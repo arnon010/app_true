@@ -51,10 +51,6 @@ public class AppointmentConfirmFragment extends BaseMvpFragment<AppointmentConfi
     private TextView tvPrice;
     private TextView tvTitleBranch;
     private TextView tvSubTitleBranch;
-    private LinearLayout layoutAddInsurance;
-    private LinearLayout layoutAddInsuranceSuccess;
-    private TextView txtYourInsurance;
-    private ImageView imgInsurance;
 
     private ItemDoctorDao data;
     private LinearLayout lloThumbnail;
@@ -107,10 +103,6 @@ public class AppointmentConfirmFragment extends BaseMvpFragment<AppointmentConfi
         tvTitleBranch = view.findViewById(R.id.tv_title);
         tvSubTitleBranch = view.findViewById(R.id.tv_subtitle);
         viewAppointmentInfo = view.findViewById(R.id.view_appoint_info);
-        layoutAddInsurance = view.findViewById(R.id.layoutAddInsurance);
-        layoutAddInsuranceSuccess = view.findViewById(R.id.layoutAddInsuranceSuccess);
-        txtYourInsurance = view.findViewById(R.id.txtYourInsurance);
-        imgInsurance = view.findViewById(R.id.imgInsurance);
     }
 
     @Override
@@ -139,34 +131,12 @@ public class AppointmentConfirmFragment extends BaseMvpFragment<AppointmentConfi
         ((MainActivity) getActivity()).setMenuHomeSelected();
 
         showToolbar();
-
-        //Mock data
-        String strYourInsurance = "AIA";
-        String strNumberInsurance = "23466785";
-
         lloThumbnail.setVisibility(View.VISIBLE);
         rloPrice.setVisibility(View.GONE);
 
         tvName.setText(data.getName());
         tvPrice.setText(data.getPricePerMinuteFormat());
         ImageUtils.show(getActivity(), imageProfile, data.getProfileImage());
-
-        layoutAddInsurance.setOnClickListener(view ->
-                startActivity(new Intent(getContext(), TestInsuranceHealthActivity.class)));
-
-
-        //Gone when cannot get data from api
-        if (strNumberInsurance.isEmpty() && strYourInsurance.isEmpty()) {
-            layoutAddInsuranceSuccess.setVisibility(View.GONE);
-        } else {
-            layoutAddInsuranceSuccess.setVisibility(View.VISIBLE);
-            txtYourInsurance.setText(getString(R.string.your_insurance)+ " " + strYourInsurance + ":" + strNumberInsurance);
-            layoutAddInsuranceSuccess.setOnClickListener(view ->
-                    startActivity(new Intent(getContext(), TestInsuranceActivity.class)));
-
-
-        }
-
         setupBranch();
         loadDataAppointment();
         setUpAppointmentInfo();

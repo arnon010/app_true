@@ -105,9 +105,13 @@ android {
 
             buildConfigField "String", "USER_TYPE", '"PATIENT"'
 
-            buildConfigField "String", "SERVER_AUTHEN", '"https://api.chiiwiilive.com/WebAuthenV2_true/"'
-            buildConfigField "String", "SERVER_BASE", '"https://api.chiiwiilive.com/webserviceV2_true/api/"'
-            buildConfigField "String", "SERVER_BASE_INFO", '"https://api.chiiwiilive.com/webserviceV2_true/"'
+//            buildConfigField "String", "SERVER_AUTHEN", '"https://api.chiiwiilive.com/WebAuthenV2_true/"'
+//            buildConfigField "String", "SERVER_BASE", '"https://api.chiiwiilive.com/webserviceV2_true/api/"'
+//            buildConfigField "String", "SERVER_BASE_INFO", '"https://api.chiiwiilive.com/webserviceV2_true/"'
+
+            buildConfigField "String", "SERVER_AUTHEN", '"https://dev-api.chiiwiilive.com/authen_true/"'
+            buildConfigField "String", "SERVER_BASE", '"https://dev-api.chiiwiilive.com/WebService_2.0.0_true/api/"'
+            buildConfigField "String", "SERVER_BASE_INFO", '"https://dev-api.chiiwiilive.com/WebService_2.0.0_true/"'
 
             buildConfigField "String", "SERVER_ONE_SIGNAL", '"https://onesignal.com/api/v1/"'
             buildConfigField "String", "MERCHANT_ID_2C2P", '"764764000000430"'

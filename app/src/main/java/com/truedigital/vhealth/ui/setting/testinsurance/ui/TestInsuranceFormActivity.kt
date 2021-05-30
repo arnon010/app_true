@@ -2,6 +2,7 @@ package com.truedigital.vhealth.ui.setting.testinsurance.ui
 
 import android.annotation.SuppressLint
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.Gravity
@@ -10,6 +11,7 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.addTextChangedListener
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LifecycleOwner
 import com.truedigital.vhealth.R
@@ -55,7 +57,7 @@ class TestInsuranceFormActivity : AppCompatActivity(), LifecycleOwner {
             dialog.dismiss()
         }
         btnAccept.setOnClickListener {
-            dialog.dismiss()
+            startActivity(Intent(this, WebViewActivity::class.java))
         }
 
         val lp = WindowManager.LayoutParams()
@@ -68,4 +70,6 @@ class TestInsuranceFormActivity : AppCompatActivity(), LifecycleOwner {
 
         dialog.show()
     }
+
+
 }

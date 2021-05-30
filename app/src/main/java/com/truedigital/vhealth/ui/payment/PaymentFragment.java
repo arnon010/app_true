@@ -44,6 +44,8 @@ import com.truedigital.vhealth.ui.main.MainActivity;
 import com.truedigital.vhealth.ui.payment.promptpay.AppointmentUiModel;
 import com.truedigital.vhealth.ui.payment.promptpay.PromptpayActivity;
 import com.truedigital.vhealth.ui.setting.info.SettingAppFragment;
+import com.truedigital.vhealth.ui.setting.testinsurance.ui.TestInsuranceActivity;
+import com.truedigital.vhealth.ui.setting.testinsurance.ui.TestInsuranceHealthActivity;
 import com.truedigital.vhealth.utils.AmountUtils;
 import com.truedigital.vhealth.utils.AppConstants;
 import com.truedigital.vhealth.utils.Camera;
@@ -120,6 +122,11 @@ public class PaymentFragment extends BaseMvpFragment<PaymentFragmentInterface.Pr
     private double total_price;
     private String omiseToken;
     private LinearLayout llo_credit_card;
+
+    private LinearLayout layoutAddInsurance;
+    private LinearLayout layoutAddInsuranceSuccess;
+    private TextView txtYourInsurance;
+    private ImageView imgInsurance;
 
     private EditText edit_shipping_name;
     private EditText edit_shipping_phone;
@@ -284,6 +291,11 @@ public class PaymentFragment extends BaseMvpFragment<PaymentFragmentInterface.Pr
         img_remember = view.findViewById(R.id.img_remember);
 
         recyclerView = view.findViewById(R.id.recycler_view_list_card);
+
+        layoutAddInsurance = view.findViewById(R.id.layoutAddInsurance);
+        layoutAddInsuranceSuccess = view.findViewById(R.id.layoutAddInsuranceSuccess);
+        txtYourInsurance = view.findViewById(R.id.txtYourInsurance);
+        imgInsurance = view.findViewById(R.id.imgInsurance);
     }
 
     @Override
@@ -297,6 +309,11 @@ public class PaymentFragment extends BaseMvpFragment<PaymentFragmentInterface.Pr
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(requireActivity());
 
         payment_mode = getPaymentMode();
+
+        //Mock data
+        String strYourInsurance = "AIA";
+        String strNumberInsurance = "23466785";
+        Integer intImgInsurance = R.drawable.aia;
 
         updateView();
         setupListener();
@@ -315,6 +332,21 @@ public class PaymentFragment extends BaseMvpFragment<PaymentFragmentInterface.Pr
         } else {
             btnDone.setText(R.string.product_buttun_payment);
             btnDone.setEnabled(false);
+        }
+
+        layoutAddInsurance.setOnClickListener(view ->
+                startActivity(new Intent(getContext(), TestInsuranceHealthActivity.class)));
+
+
+        //Gone when cannot get data from api
+        if (strNumberInsurance.isEmpty() && strYourInsurance.isEmpty()) {
+            layoutAddInsuranceSuccess.setVisibility(View.GONE);
+        } else {
+            layoutAddInsuranceSuccess.setVisibility(View.VISIBLE);
+            txtYourInsurance.setText(getString(R.string.your_insurance)+ " " + strYourInsurance + ":" + strNumberInsurance);
+            imgInsurance.setImageResource(intImgInsurance);
+            layoutAddInsuranceSuccess.setOnClickListener(view ->
+                    startActivity(new Intent(getContext(), TestInsuranceActivity.class)));
         }
 
         FirebaseAddEventsBeginCheckout();

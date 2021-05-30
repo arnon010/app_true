@@ -39,7 +39,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:icon,android:label,android:appComponentFactory">
-        <activity android:name=".ui.setting.insurance.view.InsuranceEditActivity"></activity>
+        <activity android:name=".ui.setting.insurance.view.InsuranceEditActivity" />
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -296,6 +296,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.setting.testinsurance.ui.TestInsuranceFormActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.testinsurance.ui.WebViewActivity"
             android:screenOrientation="portrait" />
     </application>
 
